@@ -1,11 +1,13 @@
+import {splitScenes, validIllustrationSource} from './illustrations.js';
+
 const panel=document.querySelector('#main-panel');
 const sidebar=document.querySelector('#sidebar');
 const modal=document.querySelector('#modal');
 const notice=document.querySelector('#status');
 const storageKey='three-minute-stories/workspace';
 const genres=['판타지','드라마','SF','미스터리','코미디','기타'];
-const steps=['초안 공개','초안 감상평','Ver.2 개고','Ver.2 감상평','Ver.3 완성'];
-const descriptions=['3분 분량의 이야기를 올리고 사이클을 시작합니다.','여섯 독자가 각자의 관점으로 200자 안팎의 감상평을 네 줄씩 남깁니다.','별점이 높은 댓글과 직접 남긴 의견을 먼저 읽고 두 번째 버전을 씁니다.','여섯 독자가 두 번째 버전을 읽고 새 감상평을 남깁니다.','두 번째 감상평을 참고해 마지막 버전을 올립니다.'];
+const steps=['초안 공개','초안 감상평','Ver.2 개고·삽화','Ver.2 감상평','Ver.3 완성'];
+const descriptions=['3분 분량의 이야기를 올리고 사이클을 시작합니다.','일곱 평론가가 각자의 관점으로 감상평 네 줄과 이미지 제안 세 줄을 남깁니다.','별점이 높은 댓글과 직접 남긴 의견을 먼저 읽고 개고한 뒤 인물과 씬별 대표 삽화를 붙입니다.','일곱 평론가가 삽화가 들어간 두 번째 버전을 읽고 글과 이미지에 의견을 남깁니다.','두 번째 감상평을 참고해 마지막 버전을 올립니다.'];
 const keyPattern=/^[a-f0-9]{64}$/;
 const esc=value=>String(value??'').replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
 let key=localStorage.getItem(storageKey)||'';
@@ -45,17 +47,45 @@ function listItems() {
 function list() {
   return '<header class="panel-head"><h2>이야기 게시판 <span>'+data.stories.length+'</span></h2><input id="search" type="search" placeholder="이야기 검색" aria-label="이야기 검색" value="'+esc(search)+'"></header><div class="filters" aria-label="이야기 상태">'+[['all','전체'],['active','개고 중'],['done','완성']].map(([id,label])=>'<button class="filter" data-action="filter" data-id="'+id+'" aria-pressed="'+(id===filter)+'">'+label+'</button>').join('')+'</div><div id="list-items">'+listItems()+'</div>';
 }
+function storyParagraph(body, opening=false) {
+  return '<p class="story-body'+(opening?' opening':'')+'">'+esc(body)+'</p>';
+}
+function storyMarkup(story, version) {
+  const art=version.illustrations;
+  const opening=story.id==='opening';
+  if (!art) return storyParagraph(version.body, opening&&version.number===1);
+  const {intro,scenes}=splitScenes(version.body);
+  if (!scenes.length) return storyParagraph(version.body);
+  const image=item=>validIllustrationSource(item?.src,story.id)
+    ? '<img src="'+esc(item.src)+'" alt="'+esc(item.alt)+'" loading="lazy" decoding="async">'
+    : '';
+  const portraits=(art.characters??[]).map(item=>{
+    const portrait=image(item);
+    return portrait?'<figure>'+portrait+'<figcaption>'+esc(item.name)+'</figcaption></figure>':'';
+  }).join('');
+  const style=[art.style?.medium,art.style?.palette,art.style?.composition].filter(Boolean);
+  return '<div class="illustrated-story">'+(intro?storyParagraph(intro,opening):'')+
+    (portraits?'<section class="cast"><h3>등장인물</h3>'+(style.length?'<p class="art-style">'+esc(style.join(' · '))+'</p>':'')+'<div class="cast-grid">'+portraits+'</div></section>':'')+
+    scenes.map(scene=>{
+      const frame=image((art.scenes??[]).find(item=>item.scene===scene.number));
+      return '<section class="story-scene"><h3><span>'+esc(scene.time)+'</span> '+esc(scene.title)+'</h3>'+
+        (frame?'<figure>'+frame+'</figure>':'')+storyParagraph(scene.body)+'</section>';
+    }).join('')+'</div>';
+}
 function commentMarkup(comment) {
   const reader=data.readers.find(item=>item.id===comment.reader);
   const name=reader?.name||'나';
-  return '<article class="comment"><div class="comment-head"><div class="comment-author">'+avatar(reader)+'<strong>'+esc(name)+'</strong><small>'+esc(reader?.role||'직접 작성')+'</small></div><div class="star-set" role="group" aria-label="'+esc(name)+' 댓글 중요도">'+[1,2,3,4,5].map(i=>'<button class="star '+(i<=comment.stars?'active':'')+'" data-action="rate" data-id="'+esc(comment.id)+'" data-stars="'+i+'" aria-label="'+i+'점" aria-pressed="'+(i===comment.stars)+'">'+(i<=comment.stars?'★':'☆')+'</button>').join('')+(comment.stars?'<button class="text-button star-clear" data-action="rate" data-id="'+esc(comment.id)+'" data-stars="0" aria-label="별점 지우기">지우기</button>':'')+'</div></div><p>'+esc(comment.body)+'</p></article>';
+  const visual=Array.isArray(comment.visual)&&comment.visual.length===3
+    ? '<div class="visual-review"><strong>이미지 의견</strong><ol start="5">'+comment.visual.map(line=>'<li>'+esc(line)+'</li>').join('')+'</ol></div>'
+    : '';
+  return '<article class="comment"><div class="comment-head"><div class="comment-author">'+avatar(reader)+'<strong>'+esc(name)+'</strong><small>'+esc(reader?.role||'직접 작성')+'</small></div><div class="star-set" role="group" aria-label="'+esc(name)+' 댓글 중요도">'+[1,2,3,4,5].map(i=>'<button class="star '+(i<=comment.stars?'active':'')+'" data-action="rate" data-id="'+esc(comment.id)+'" data-stars="'+i+'" aria-label="'+i+'점" aria-pressed="'+(i===comment.stars)+'">'+(i<=comment.stars?'★':'☆')+'</button>').join('')+(comment.stars?'<button class="text-button star-clear" data-action="rate" data-id="'+esc(comment.id)+'" data-stars="0" aria-label="별점 지우기">지우기</button>':'')+'</div></div><p>'+esc(comment.body)+'</p>'+visual+'</article>';
 }
 function detail(story,number) {
   const version=story.versions.find(item=>item.number===number)||story.versions.at(-1);
   const summary=!story.cycleAt?'초안을 완성한 뒤 사이클을 시작하세요.':story.next?steps[story.next.step]+' · '+stamp(story.next.dueAt,true)+'부터':'세 번째 버전까지 완성했습니다.';
   return '<div class="detail"><button class="mini-link" data-action="list">← 이야기 게시판</button><header><h2>'+esc(story.title)+'</h2><div class="detail-meta"><span class="badge accent">'+esc(story.genre)+'</span><span>'+esc(story.author)+'</span><span>·</span><span>3분 단편</span><span class="badge">'+state(story)+'</span></div></header>'+
     '<div class="version-bar" aria-label="이야기 버전">'+[1,2,3].map(n=>'<button class="button quiet version" data-action="version" data-version="'+n+'" '+(n===version.number?'aria-current="true" ':'')+(n>story.versions.length?'disabled':'')+'>Ver.'+n+'</button>').join('')+'</div>'+
-    '<p class="story-body '+(story.id==='opening'&&version.number===1?'opening':'')+'">'+esc(version.body)+'</p>'+
+    storyMarkup(story,version)+
     (version.notes?'<div class="notes"><strong>개고에서 반영한 피드백</strong><p>'+esc(version.notes)+'</p></div>':'')+
     '<div class="cycle-strip"><div><strong>'+summary+'</strong>'+(story.next?'<small>이전 단계가 끝난 뒤 한 시간 간격으로 진행합니다.</small>':'')+'</div>'+
     (!story.cycleAt?'<span><button class="button quiet" data-action="edit">초안 편집</button> <button class="button primary" data-action="start">사이클 시작</button></span>':'')+'</div>'+
@@ -71,13 +101,13 @@ function render() {
     if(current) button.setAttribute('aria-current','page'); else button.removeAttribute('aria-current');
   });
   if (page==='readers') {
-    panel.innerHTML='<header class="panel-head"><h2>여섯 독자</h2></header><ul class="reader-grid">'+data.readers.map(reader=>'<li><h3>'+avatar(reader)+esc(reader.name)+'</h3><strong>'+esc(reader.role)+'</strong><p>'+esc(reader.tone)+'</p><p>'+esc(reader.focus)+'</p></li>').join('')+'</ul>';
+    panel.innerHTML='<header class="panel-head"><h2>일곱 평론가</h2></header><ul class="reader-grid">'+data.readers.map(reader=>'<li><h3>'+avatar(reader)+esc(reader.name)+'</h3><strong>'+esc(reader.role)+'</strong><p>'+esc(reader.tone)+'</p><p>'+esc(reader.focus)+'</p></li>').join('')+'</ul>';
   } else if (page==='cycle') {
     panel.innerHTML='<header class="panel-head"><h2>작업 사이클</h2></header><div class="info">'+timeline(true)+'<p class="flow-note">이전 단계가 끝난 뒤 한 시간이 지나면 다음 단계가 열립니다. 직접 쓴 댓글과 별점은 해당 버전에 기록됩니다.</p><p>편집부는 하루 두 편의 새 단편을 올립니다. 작업실을 편집부에 연결하면 내가 남긴 댓글과 별점이 예약 개고에 전달됩니다.</p></div>';
   } else if (page==='story'&&story) panel.innerHTML=detail(story,version);
   else panel.innerHTML=list();
 
-  sidebar.innerHTML='<section class="side-card"><div class="side-head"><h2 class="side-title">한 편의 작업 순서</h2><button class="mini-link" data-action="cycle">자세히</button></div>'+timeline()+'</section><section class="side-card"><div class="side-head"><h2 class="side-title">여섯 독자</h2><button class="mini-link" data-action="readers">인물 소개</button></div><ul class="people-mini">'+data.readers.map(reader=>'<li>'+avatar(reader)+'<strong>'+esc(reader.name)+'</strong><span>'+esc(reader.role)+'</span></li>').join('')+'</ul></section>';
+  sidebar.innerHTML='<section class="side-card"><div class="side-head"><h2 class="side-title">한 편의 작업 순서</h2><button class="mini-link" data-action="cycle">자세히</button></div>'+timeline()+'</section><section class="side-card"><div class="side-head"><h2 class="side-title">일곱 평론가</h2><button class="mini-link" data-action="readers">인물 소개</button></div><ul class="people-mini">'+data.readers.map(reader=>'<li>'+avatar(reader)+'<strong>'+esc(reader.name)+'</strong><span>'+esc(reader.role)+'</span></li>').join('')+'</ul></section>';
 }
 function showNotice(message='',error=false) {
   notice.hidden=!message;
