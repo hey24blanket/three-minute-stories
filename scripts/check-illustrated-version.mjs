@@ -1,12 +1,14 @@
 import {readFile} from 'node:fs/promises';
 import {validateIllustrations} from '../public/illustrations.js';
 
-const [, , file] = process.argv;
-if (!file) throw new Error('Usage: node scripts/check-illustrated-version.mjs editorial/<story-id>.json');
+const [, , file, ...options] = process.argv;
+if (!file || options.some(option => option !== '--require-two')) {
+  throw new Error('Usage: node scripts/check-illustrated-version.mjs editorial/<story-id>.json [--require-two]');
+}
 const story = JSON.parse(await readFile(file, 'utf8'));
 const version = story.versions.find(item => item.number === 2);
 if (!version) throw new Error('Ver.2가 없습니다.');
-const images = validateIllustrations(story.id, version);
+const images = validateIllustrations(story.id, version, options.includes('--require-two'));
 
 for (const {src} of images) {
   const bytes = await readFile('public' + src);

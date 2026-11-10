@@ -20,7 +20,7 @@ export function validIllustrationSource(src, storyId) {
     /^[a-z0-9-]+\.(?:webp|jpe?g|png)$/.test(src.slice(prefix.length));
 }
 
-export function validateIllustrations(storyId, version) {
+export function validateIllustrations(storyId, version, requireTwo = false) {
   const art = version.illustrations;
   if (version.number !== 2 || !art || !Array.isArray(art.characters) || !Array.isArray(art.scenes)) {
     throw new Error('Ver.2의 등장인물·씬 삽화 목록이 필요합니다.');
@@ -30,9 +30,12 @@ export function validateIllustrations(storyId, version) {
     throw new Error('매체, 팔레트, 구도 기록이 필요합니다.');
   }
   const {scenes} = splitScenes(version.body);
-  if (!scenes.length || art.scenes.length !== scenes.length ||
-    scenes.some(({number, body}) => !body || art.scenes.filter(item => item?.scene === number).length !== 1)) {
-    throw new Error('본문의 시간표시 씬마다 대표 삽화가 정확히 한 장 필요합니다.');
+  const framesPerScene = requireTwo ? 2 : art.scenes.length / scenes.length;
+  if (!scenes.length || ![1,2].includes(framesPerScene) || art.scenes.length !== scenes.length * framesPerScene ||
+    scenes.some(({number, body}) => !body || art.scenes.filter(item => item?.scene === number).length !== framesPerScene)) {
+    throw new Error(requireTwo
+      ? '본문의 시간표시 씬마다 대표 삽화가 정확히 두 장 필요합니다.'
+      : '모든 씬에 대표 삽화가 동일한 수로 한 장 또는 두 장 필요합니다.');
   }
   if (!art.characters.length || art.characters.some(item => !text(item?.name)) ||
     new Set(art.characters.map(item => item.name.trim())).size !== art.characters.length) {

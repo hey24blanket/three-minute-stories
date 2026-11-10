@@ -67,9 +67,10 @@ function storyMarkup(story, version) {
   return '<div class="illustrated-story">'+(intro?storyParagraph(intro,opening):'')+
     (portraits?'<section class="cast"><h3>등장인물</h3>'+(style.length?'<p class="art-style">'+esc(style.join(' · '))+'</p>':'')+'<div class="cast-grid">'+portraits+'</div></section>':'')+
     scenes.map(scene=>{
-      const frame=image((art.scenes??[]).find(item=>item.scene===scene.number));
+      const frames=(art.scenes??[]).filter(item=>item.scene===scene.number).map(image).filter(Boolean);
+      const figures=frames.map(frame=>'<figure>'+frame+'</figure>').join('');
       return '<section class="story-scene"><h3><span>'+esc(scene.time)+'</span> '+esc(scene.title)+'</h3>'+
-        (frame?'<figure>'+frame+'</figure>':'')+storyParagraph(scene.body)+'</section>';
+        (frames.length>1?'<div class="scene-frames">'+figures+'</div>':figures)+storyParagraph(scene.body)+'</section>';
     }).join('')+'</div>';
 }
 function commentMarkup(comment) {
@@ -87,7 +88,7 @@ function detail(story,number) {
     '<div class="version-bar" aria-label="이야기 버전">'+[1,2,3].map(n=>'<button class="button quiet version" data-action="version" data-version="'+n+'" '+(n===version.number?'aria-current="true" ':'')+(n>story.versions.length?'disabled':'')+'>Ver.'+n+'</button>').join('')+'</div>'+
     storyMarkup(story,version)+
     (version.notes?'<div class="notes"><strong>개고에서 반영한 피드백</strong><p>'+esc(version.notes)+'</p></div>':'')+
-    '<div class="cycle-strip"><div><strong>'+summary+'</strong>'+(story.next?'<small>이전 단계가 끝난 뒤 한 시간 간격으로 진행합니다.</small>':'')+'</div>'+
+    '<div class="cycle-strip"><div><strong>'+summary+'</strong>'+(story.next?'<small>이전 단계가 끝난 뒤 '+(story.next.intervalMinutes===30?'최소 30분':'최소 한 시간')+' 간격으로 진행합니다.</small>':'')+'</div>'+
     (!story.cycleAt?'<span><button class="button quiet" data-action="edit">초안 편집</button> <button class="button primary" data-action="start">사이클 시작</button></span>':'')+'</div>'+
     '<div class="comments-title"><h3>Ver.'+version.number+' 댓글 <span>'+version.comments.length+'</span></h3><span class="comment-help">'+(story.editorial?'작업실을 편집부에 연결하면 개고에 반영':'별점이 높을수록 개고에 우선 반영')+'</span></div>'+
     (version.comments.length?[...version.comments].sort((a,b)=>b.stars-a.stars).map(commentMarkup).join(''):'<p class="comment-help">아직 댓글이 없습니다.</p>')+
@@ -103,7 +104,7 @@ function render() {
   if (page==='readers') {
     panel.innerHTML='<header class="panel-head"><h2>일곱 평론가</h2></header><ul class="reader-grid">'+data.readers.map(reader=>'<li><h3>'+avatar(reader)+esc(reader.name)+'</h3><strong>'+esc(reader.role)+'</strong><p>'+esc(reader.tone)+'</p><p>'+esc(reader.focus)+'</p></li>').join('')+'</ul>';
   } else if (page==='cycle') {
-    panel.innerHTML='<header class="panel-head"><h2>작업 사이클</h2></header><div class="info">'+timeline(true)+'<p class="flow-note">이전 단계가 끝난 뒤 한 시간이 지나면 다음 단계가 열립니다. 직접 쓴 댓글과 별점은 해당 버전에 기록됩니다.</p><p>편집부는 하루 두 편의 새 단편을 올립니다. 작업실을 편집부에 연결하면 내가 남긴 댓글과 별점이 예약 개고에 전달됩니다.</p></div>';
+    panel.innerHTML='<header class="panel-head"><h2>작업 사이클</h2></header><div class="info">'+timeline(true)+'<p class="flow-note">평소에는 이전 단계가 끝난 뒤 한 시간이 지나면 다음 단계가 열립니다. 직접 쓴 댓글과 별점은 해당 버전에 기록됩니다.</p><p>편집부는 평소 하루 두 편의 새 단편을 올립니다. 작업실을 편집부에 연결하면 내가 남긴 댓글과 별점이 예약 개고에 전달됩니다.</p></div>';
   } else if (page==='story'&&story) panel.innerHTML=detail(story,version);
   else panel.innerHTML=list();
 
