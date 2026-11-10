@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f7f5f1">
+<meta name="description" content="한 편에 3분, 여섯 독자의 시선으로 다시 쓰는 이야기.">
+<title>삼분극장 · 이야기 게시판</title>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/style.css">
+<script src="/app.js" type="module"></script>
+</head>
+<body>
+<header class="top">
+  <div class="top-in">
+    <a class="brand" href="#list" aria-label="삼분극장 홈"><span class="brand-icon"><i></i><i></i><i></i></span>삼분극장<span class="brand-en">THREE-MINUTE STORIES</span></a>
+    <button class="button quiet top-workspace" data-action="workspace">작업실 연결</button>
+  </div>
+</header>
+<main class="shell">
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="hero-copy">
+      <div class="eyebrow"><i></i> 단편 이야기 작업실</div>
+      <h1 id="hero-title">세 분 안에,<br>하나의 세계.</h1>
+      <p>한 편에 3분. 여섯 독자의 시선으로 다시 쓰는 이야기.</p>
+    </div>
+    <img class="hero-art" src="/gap.svg" alt="" width="590" height="310">
+    <span class="hero-caption">FIG. 01 <b></b> 상자 아래의 세계</span>
+  </section>
+  <nav class="tabs" aria-label="게시판 메뉴">
+    <button class="tab" data-action="list">이야기 게시판</button>
+    <button class="tab" data-action="readers">여섯 독자</button>
+    <button class="tab" data-action="cycle">작업 사이클</button>
+    <button class="button primary new-story" data-action="new"><span aria-hidden="true">＋</span> 새 이야기</button>
+  </nav>
+  <div id="status" class="notice" role="status" hidden></div>
+  <div class="layout">
+    <section id="main-panel" class="panel"><p class="loading">게시판을 불러오는 중입니다.</p></section>
+    <aside class="sidebar" id="sidebar" aria-label="작업실 정보"></aside>
+  </div>
+  <footer><strong>삼분극장</strong><span>한 편의 시작부터 세 번째 버전까지.</span></footer>
+</main>
+<dialog id="modal" aria-labelledby="modal-title"></dialog>
+</body>
+</html>
