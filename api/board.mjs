@@ -1,5 +1,5 @@
 import {createHash} from 'node:crypto';
-import {get, put, BlobAlreadyExistsError, BlobPreconditionFailedError} from '@vercel/blob';
+import {get, put, BlobPreconditionFailedError} from '@vercel/blob';
 import {apply, readers, reviewQueue, starter} from '../lib/board.mjs';
 
 const initial = () => starter(process.env.OPENING_DRAFT);
@@ -41,7 +41,8 @@ export default async function handler(req,res) {
         await save(path,board,etag);
         return res.status(200).json(reply(board));
       } catch (error) {
-        if (!(error instanceof BlobPreconditionFailedError || error instanceof BlobAlreadyExistsError)) throw error;
+        if (error instanceof BlobPreconditionFailedError) continue;
+        if (etag || !(await load(path)).etag) throw error;
       }
     }
     return res.status(409).json({error:'동시에 변경된 내용이 있습니다. 다시 시도해 주세요.'});
