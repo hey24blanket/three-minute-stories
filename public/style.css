@@ -69,3 +69,4 @@ label{display:grid;gap:4px;font-size:13px;font-weight:700}input,textarea,select{
 @media(max-width:435px){
   .brand-en{display:none}.tab{font-size:12px;padding-inline:6px}.tabs{gap:3px}.new-story{padding-inline:7px;font-size:12px}.tab[aria-current="page"]::after{left:4px;right:4px}.hero{height:224px}.hero-art{right:-126px}.hero-caption{right:10px;font-size:9px}.side-card{padding:12px}.reader-grid{grid-template-columns:1fr}.detail h2{font-size:24px}.panel-head input{width:140px}.top-workspace{padding-inline:8px}
 }
+

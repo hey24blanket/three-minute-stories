@@ -59,7 +59,7 @@ function detail(story,number) {
     (version.notes?'<div class="notes"><strong>개고에서 반영한 피드백</strong><p>'+esc(version.notes)+'</p></div>':'')+
     '<div class="cycle-strip"><div><strong>'+summary+'</strong>'+(story.next?'<small>이전 단계가 끝난 뒤 한 시간 간격으로 진행합니다.</small>':'')+'</div>'+
     (!story.cycleAt?'<span><button class="button quiet" data-action="edit">초안 편집</button> <button class="button primary" data-action="start">사이클 시작</button></span>':'')+'</div>'+
-    '<div class="comments-title"><h3>Ver.'+version.number+' 댓글 <span>'+version.comments.length+'</span></h3><span class="comment-help">별점이 높을수록 개고에 우선 반영</span></div>'+
+    '<div class="comments-title"><h3>Ver.'+version.number+' 댓글 <span>'+version.comments.length+'</span></h3><span class="comment-help">'+(story.editorial?'작업실을 편집부에 연결하면 개고에 반영':'별점이 높을수록 개고에 우선 반영')+'</span></div>'+
     (version.comments.length?[...version.comments].sort((a,b)=>b.stars-a.stars).map(commentMarkup).join(''):'<p class="comment-help">아직 댓글이 없습니다.</p>')+
     '<form class="comment-form" id="comment-form"><label>직접 댓글 달기<textarea name="body" placeholder="이 버전에 남길 의견을 적어주세요." maxlength="2000" required></textarea></label><button class="button primary" type="submit">댓글 등록</button></form></div>';
 }
@@ -73,7 +73,7 @@ function render() {
   if (page==='readers') {
     panel.innerHTML='<header class="panel-head"><h2>여섯 독자</h2></header><ul class="reader-grid">'+data.readers.map(reader=>'<li><h3>'+avatar(reader)+esc(reader.name)+'</h3><strong>'+esc(reader.role)+'</strong><p>'+esc(reader.tone)+'</p><p>'+esc(reader.focus)+'</p></li>').join('')+'</ul>';
   } else if (page==='cycle') {
-    panel.innerHTML='<header class="panel-head"><h2>작업 사이클</h2></header><div class="info">'+timeline(true)+'<p class="flow-note">실제 다음 시각은 앞 단계 완료 시각에서 1시간 뒤입니다. 직접 쓴 댓글과 별점은 해당 버전에 기록됩니다.</p><p>게시판은 예약 실행이 보낸 글을 받을 수 있습니다. 예약 실행을 연결한 뒤 초안을 공개하면 시간 순서대로 진행됩니다.</p></div>';
+    panel.innerHTML='<header class="panel-head"><h2>작업 사이클</h2></header><div class="info">'+timeline(true)+'<p class="flow-note">이전 단계가 끝난 뒤 한 시간이 지나면 다음 단계가 열립니다. 직접 쓴 댓글과 별점은 해당 버전에 기록됩니다.</p><p>편집부는 하루 두 편의 새 단편을 올립니다. 작업실을 편집부에 연결하면 내가 남긴 댓글과 별점이 예약 개고에 전달됩니다.</p></div>';
   } else if (page==='story'&&story) panel.innerHTML=detail(story,version);
   else panel.innerHTML=list();
 
@@ -125,6 +125,7 @@ function editDialog(story) {
 function workspaceDialog() {
   showDialog('<h2 id="modal-title">작업실 연결</h2><form id="workspace-form"><p class="workspace-copy">이야기와 댓글·별점은 작업실별로 저장됩니다. 다른 기기에서 같은 작업실을 열려면 내 연결 키를 보관한 뒤 그 기기에서 입력하세요. 키를 가진 사람은 내용을 편집할 수 있습니다.</p>'+
     '<div class="key-row"><label>내 연결 키<input name="current" type="password" readonly value="'+esc(key)+'" placeholder="아직 연결 키가 없습니다."></label><button class="button quiet" data-action="copy" type="button">키 복사</button></div>'+
+    '<p class="workspace-copy">댓글과 별점을 예약 개고에 전달하려면 편집 연동 ID를 복사해 편집부에 알려주세요. 연결 키는 본인만 보관하세요.</p><button class="button quiet" data-action="editor-id" type="button">편집 연동 ID 복사</button>'+
     '<label>기존 작업실 연결 키<input name="restore" type="password" autocomplete="off" spellcheck="false" maxlength="64" pattern="[a-f0-9]{64}" placeholder="64자리 연결 키"></label><p class="form-error" role="alert" hidden></p><div class="dialog-actions"><p class="status-text" role="status"></p><button class="button quiet" type="button" data-action="close">닫기</button><button class="button primary" type="submit">연결</button></div></form>');
 }
 function dialogError(error) {
@@ -159,6 +160,14 @@ document.addEventListener('click',async event=>{
       modal.querySelector('[name=current]').value=connectionKey;
       await navigator.clipboard.writeText(connectionKey);
       modal.querySelector('.status-text').textContent='연결 키를 복사했습니다.';
+    }
+    if(action==='editor-id') {
+      const connectionKey=ensureKey();
+      modal.querySelector('[name=current]').value=connectionKey;
+      const bytes=await crypto.subtle.digest('SHA-256',new TextEncoder().encode(connectionKey));
+      const editorId=Array.from(new Uint8Array(bytes),n=>n.toString(16).padStart(2,'0')).join('');
+      await navigator.clipboard.writeText('editor:'+editorId);
+      modal.querySelector('.status-text').textContent='편집 연동 ID를 복사했습니다.';
     }
     if(action==='start') showDialog('<h2 id="modal-title">이야기 사이클 시작</h2><form id="start-form"><p class="workspace-copy">시작하면 현재 초안이 Ver.1으로 보존됩니다. 첫 감상평은 한 시간 뒤부터 등록할 수 있습니다.</p><p class="form-error" role="alert" hidden></p><div class="dialog-actions"><button class="button quiet" data-action="close" type="button">취소</button><button class="button primary" type="submit">시작하기</button></div></form>');
     if(action==='rate'&&await write({action:'rate',storyId:view.story.id,version:view.version,commentId:id,stars:Number(stars)},button)) {
@@ -221,3 +230,4 @@ request().then(result=>{data=result;render();}).catch(async error=>{
   showNotice(error.message,true);
   if (!data.stories.length) panel.innerHTML='<p class="empty muted">게시판을 불러오지 못했습니다.</p>';
 });
+
