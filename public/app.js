@@ -7,7 +7,7 @@ const notice=document.querySelector('#status');
 const storageKey='three-minute-stories/workspace';
 const genres=['판타지','드라마','SF','미스터리','코미디','기타'];
 const steps=['초안 공개','초안 감상평','Ver.2 개고·삽화','Ver.2 감상평','Ver.3 완성'];
-const descriptions=['3분 분량의 이야기를 올리고 사이클을 시작합니다.','일곱 평론가가 각자의 관점으로 감상평 네 줄과 이미지 제안 세 줄을 남깁니다.','별점이 높은 댓글과 직접 남긴 의견을 먼저 읽고 개고한 뒤 인물과 씬별 대표 삽화를 붙입니다.','일곱 평론가가 삽화가 들어간 두 번째 버전을 읽고 글과 이미지에 의견을 남깁니다.','두 번째 감상평을 참고해 마지막 버전을 올립니다.'];
+const descriptions=['3분 분량의 이야기를 올리고 사이클을 시작합니다.','일곱 평론가가 각자의 관점으로 감상평 네 줄과 이미지 제안 세 줄을 남깁니다.','별점이 높은 댓글과 직접 남긴 의견을 먼저 읽고 개고한 뒤 인물과 씬별 대표 삽화를 붙입니다.','일곱 평론가가 삽화가 들어간 두 번째 버전을 읽고 글과 이미지에 의견을 남깁니다.','두 번째 감상평을 참고해 최종 원고를 다듬고 씬마다 삽화 두 장에서 네 장을 붙입니다.'];
 const keyPattern=/^[a-f0-9]{64}$/;
 const esc=value=>String(value??'').replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
 let key=localStorage.getItem(storageKey)||'';
@@ -56,7 +56,7 @@ function storyMarkup(story, version) {
   if (!art) return storyParagraph(version.body, opening&&version.number===1);
   const {intro,scenes}=splitScenes(version.body);
   if (!scenes.length) return storyParagraph(version.body);
-  const image=item=>validIllustrationSource(item?.src,story.id)
+  const image=item=>validIllustrationSource(item?.src,story.id,version.number)
     ? '<img src="'+esc(item.src)+'" alt="'+esc(item.alt)+'" loading="lazy" decoding="async">'
     : '';
   const portraits=(art.characters??[]).map(item=>{
