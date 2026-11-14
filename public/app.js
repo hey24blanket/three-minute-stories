@@ -1,3 +1,4 @@
+import {renderEtymology} from './etymology.js';
 import {splitScenes, validIllustrationSource} from './illustrations.js';
 
 const panel=document.querySelector('#main-panel');
@@ -101,7 +102,10 @@ function render() {
     const current=button.dataset.action===(page==='story'?'list':page);
     if(current) button.setAttribute('aria-current','page'); else button.removeAttribute('aria-current');
   });
-  if (page==='readers') {
+  if (page==='etymology') {
+    renderEtymology(panel,sidebar,id);
+    return;
+  } else if (page==='readers') {
     panel.innerHTML='<header class="panel-head"><h2>일곱 평론가</h2></header><ul class="reader-grid">'+data.readers.map(reader=>'<li><h3>'+avatar(reader)+esc(reader.name)+'</h3><strong>'+esc(reader.role)+'</strong><p>'+esc(reader.tone)+'</p><p>'+esc(reader.focus)+'</p></li>').join('')+'</ul>';
   } else if (page==='cycle') {
     panel.innerHTML='<header class="panel-head"><h2>작업 사이클</h2></header><div class="info">'+timeline(true)+'<p class="flow-note">평소에는 이전 단계가 끝난 뒤 한 시간이 지나면 다음 단계가 열립니다. 직접 쓴 댓글과 별점은 해당 버전에 기록됩니다.</p><p>편집부는 평소 하루 두 편의 새 단편을 올립니다. 작업실을 편집부에 연결하면 내가 남긴 댓글과 별점이 예약 개고에 전달됩니다.</p></div>';
@@ -175,7 +179,7 @@ document.addEventListener('click',async event=>{
   const {action,id,version,stars}=button.dataset;
   const view=current();
   try {
-    if(['list','readers','cycle'].includes(action)) go(action);
+    if(['list','readers','cycle','etymology'].includes(action)) go(action);
     if(action==='story') go('story/'+id+'/'+version);
     if(action==='version') go('story/'+view.story.id+'/'+version);
     if(action==='filter') {
