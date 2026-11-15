@@ -1,3 +1,4 @@
+import {renderBeliefs} from './beliefs.js';
 import {renderEtymology} from './etymology.js';
 import {splitScenes, validIllustrationSource} from './illustrations.js';
 
@@ -102,7 +103,10 @@ function render() {
     const current=button.dataset.action===(page==='story'?'list':page);
     if(current) button.setAttribute('aria-current','page'); else button.removeAttribute('aria-current');
   });
-  if (page==='etymology') {
+  if (page==='beliefs') {
+    renderBeliefs(panel,sidebar,id);
+    return;
+  } else if (page==='etymology') {
     renderEtymology(panel,sidebar,id);
     return;
   } else if (page==='readers') {
@@ -179,7 +183,7 @@ document.addEventListener('click',async event=>{
   const {action,id,version,stars}=button.dataset;
   const view=current();
   try {
-    if(['list','readers','cycle','etymology'].includes(action)) go(action);
+    if(['list','readers','cycle','etymology','beliefs'].includes(action)) go(action);
     if(action==='story') go('story/'+id+'/'+version);
     if(action==='version') go('story/'+view.story.id+'/'+version);
     if(action==='filter') {
@@ -258,11 +262,12 @@ document.addEventListener('submit',async event=>{
   }
 });
 window.addEventListener('hashchange',render);
+render();
 request().then(result=>{data=result;render();}).catch(async error=>{
   if (key) {
     try {data=await request(null,'');render();} catch {}
   }
   showNotice(error.message,true);
-  if (!data.stories.length) panel.innerHTML='<p class="empty muted">게시판을 불러오지 못했습니다.</p>';
+  if (!data.stories.length && !['beliefs','etymology'].includes(route().page)) panel.innerHTML='<p class="empty muted">게시판을 불러오지 못했습니다.</p>';
 });
 
