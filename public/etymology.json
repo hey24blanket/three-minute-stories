@@ -13,7 +13,14 @@
         "title": "국립국어원 온라인가나다 · 짜다와 소금의 역사 정보",
         "url": "https://www.korean.go.kr/front/onlineQna/onlineQnaView.do?mn_id=27&pageIndex=1&qna_seq=330292"
       }
-    ]
+    ],
+    "conclusion": "‘소+금’으로 나눌 근거는 확인되지 않는다. 확인되는 옛 형태는 소곰이다. 따라서 금처럼 귀해서 붙은 이름이라는 설명을 정답으로 쓰면 안 된다.",
+    "sourceDependence": {
+      "level": "높음",
+      "reason": "등록 출처 1개에 근거한 설명. 원문 문장·전개 유사도는 미측정.",
+      "basis": "출처 수에 따른 예비 분류",
+      "reviewedAt": "2026-11-15"
+    }
   },
   {
     "id": "etymology-20261114-02",
@@ -29,7 +36,14 @@
         "title": "우리말 배움터 · 신문 표제어 세월아 네월아 유감",
         "url": "https://urimal.nara-speller.co.kr/urimal_new/read/common/sisa/sisa.asp?ID=5071&page_num=1383&search_str=&section=&select="
       }
-    ]
+    ],
+    "conclusion": "세월의 ‘세’를 숫자 세로 받아 ‘네’를 덧붙인 말장난이라는 해설이 있다. 다만 이것은 표현의 구조를 설명하는 해설이며 최초 발생을 입증한 결론은 아니다.",
+    "sourceDependence": {
+      "level": "높음",
+      "reason": "등록 출처 1개에 근거한 설명. 원문 문장·전개 유사도는 미측정.",
+      "basis": "출처 수에 따른 예비 분류",
+      "reviewedAt": "2026-11-15"
+    }
   },
   {
     "id": "etymology-20261114-03",
@@ -49,7 +63,14 @@
         "title": "국립국어원 새국어소식 · 양(洋)-",
         "url": "https://www.korean.go.kr/nkview/nknews/200507/84_2.html"
       }
-    ]
+    ],
+    "conclusion": "서양에서 온 버선이라는 명명이다. 洋은 서양, 襪은 버선을 나타낸다.",
+    "sourceDependence": {
+      "level": "검토 필요",
+      "reason": "복수 출처가 등록되어 있으나 독립성·핵심 논증 비중은 아직 미평가.",
+      "basis": "출처 수에 따른 예비 분류",
+      "reviewedAt": "2026-11-15"
+    }
   },
   {
     "id": "etymology-20261114-04",
@@ -69,7 +90,14 @@
         "title": "국사편찬위원회 우리역사넷 · 양반의 개념",
         "url": "https://contents.history.go.kr/mobile/nh/view.do?levelId=nh_025_0020_0030_0010"
       }
-    ]
+    ],
+    "conclusion": "문반과 무반이라는 두 반열에서 출발해 가문과 지배 신분층을 가리키는 말로 범위가 넓어졌다.",
+    "sourceDependence": {
+      "level": "검토 필요",
+      "reason": "복수 출처가 등록되어 있으나 독립성·핵심 논증 비중은 아직 미평가.",
+      "basis": "출처 수에 따른 예비 분류",
+      "reviewedAt": "2026-11-15"
+    }
   },
   {
     "id": "etymology-20261114-15-01",
@@ -85,7 +113,14 @@
         "title": "조항범, 「사냥」, 새국어소식 2000년 12월, 본문",
         "url": "https://www.korean.go.kr/nkview/nknews/200012/29_2.htm"
       }
-    ]
+    ],
+    "conclusion": "검토한 해설은 산행(山行) 계열의 옛말에서 사냥으로 변한 것으로 설명한다. 산에 가는 일이 포획을 뜻하게 된 동기는 연구자의 해석이다.",
+    "sourceDependence": {
+      "level": "높음",
+      "reason": "등록 출처 1개에 근거한 설명. 원문 문장·전개 유사도는 미측정.",
+      "basis": "출처 수에 따른 예비 분류",
+      "reviewedAt": "2026-11-15"
+    }
   },
   {
     "id": "etymology-20261114-15-02",
@@ -101,7 +136,14 @@
         "title": "홍윤표, 「성냥의 어원」, 쉼표·마침표 2007년 3월, 문헌 용례와 변화 과정",
         "url": "https://www.korean.go.kr/nkview/onletter/20070301/print/04.html"
       }
-    ]
+    ],
+    "conclusion": "석류황이라는 재료 이름이 소리 변화를 거쳐 성냥으로 이어졌다는 설명이다. 다만 변화 과정의 일부 중간형은 직접 발견된 기록이 아니라 재구다.",
+    "sourceDependence": {
+      "level": "높음",
+      "reason": "등록 출처 1개에 근거한 설명. 원문 문장·전개 유사도는 미측정.",
+      "basis": "출처 수에 따른 예비 분류",
+      "reviewedAt": "2026-11-15"
+    }
   },
   {
     "id": "etymology-20261114-15-03",
@@ -121,7 +163,14 @@
         "title": "소열녕, 「어원에 입각한 한자어 판별 기준」, 중국학보 107, 2024, 3–23쪽 — KCI 초록·서지정보만 확인",
         "url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003058139"
       }
-    ]
+    ],
+    "conclusion": "고대 중국어의 筆에 해당하는 소리를 빌려 온 말이라는 설명이다. 오늘의 한자음 ‘필’과 다르다고 해서 관련이 없는 것은 아니다.",
+    "sourceDependence": {
+      "level": "검토 필요",
+      "reason": "복수 출처가 등록되어 있으나 독립성·핵심 논증 비중은 아직 미평가.",
+      "basis": "출처 수에 따른 예비 분류",
+      "reviewedAt": "2026-11-15"
+    }
   },
   {
     "id": "etymology-20261114-15-04",
@@ -137,7 +186,14 @@
         "title": "국립국어원, 「가방, 구두의 표현」, 상담 사례 모음, 2020-01-16",
         "url": "https://www.korean.go.kr/front/mcfaq/mcfaqView.do?mcfaq_seq=8960"
       }
-    ]
+    ],
+    "conclusion": "일본어 くつ를 받아들인 말이다. ‘구’와 ‘두’에 각각 한자를 붙이는 분석은 근거가 없다.",
+    "sourceDependence": {
+      "level": "높음",
+      "reason": "등록 출처 1개에 근거한 설명. 원문 문장·전개 유사도는 미측정.",
+      "basis": "출처 수에 따른 예비 분류",
+      "reviewedAt": "2026-11-15"
+    }
   },
   {
     "id": "etymology-20261114-15-05",
@@ -157,7 +213,14 @@
         "title": "진갑곤, 「한자어와 관계있는 우리말의 어원」, 새국어생활 12권 2호, 2002, 165–166쪽 해당 대목 확인",
         "url": "https://www.korean.go.kr/nkview/nklife/2002_2/2002_0212.pdf"
       }
-    ]
+    ],
+    "conclusion": "검토한 해설은 沈菜와 딤채·짐채 계열의 옛 형태를 연결한다. 이는 이름의 변천이며 김치라는 음식 자체의 발명 시점을 뜻하지 않는다.",
+    "sourceDependence": {
+      "level": "검토 필요",
+      "reason": "복수 출처가 등록되어 있으나 독립성·핵심 논증 비중은 아직 미평가.",
+      "basis": "출처 수에 따른 예비 분류",
+      "reviewedAt": "2026-11-15"
+    }
   },
   {
     "id": "etymology-20261114-15-06",
@@ -173,7 +236,14 @@
         "title": "조항범, 「네티즌들이 궁금해하는 어원 몇 가지(1)」, 새국어생활 14권 2호, 2004, Ⅱ-1 감쪽같다, 126–129쪽 확인",
         "url": "https://www.korean.go.kr/nkview/nklife/2004_2/2004_0206.pdf"
       }
-    ]
+    ],
+    "conclusion": "곶감 일화만으로 설명할 수 없다. 조항범은 옛 사전의 감접같다 등을 근거로 접붙이기와 연결하지만, 이 편에서 확인한 것은 그 연구자의 지지설이지 정설 합의는 아니다.",
+    "sourceDependence": {
+      "level": "높음",
+      "reason": "등록 출처 1개에 근거한 설명. 원문 문장·전개 유사도는 미측정.",
+      "basis": "출처 수에 따른 예비 분류",
+      "reviewedAt": "2026-11-15"
+    }
   },
   {
     "id": "etymology-20261114-15-07",
@@ -189,7 +259,14 @@
         "title": "이득춘, 「한국어 한자어의 기준에 대한 관견」, 새국어생활 16권 1호, 2006, 2.3절·173쪽 확인",
         "url": "https://www.korean.go.kr/nkview/nklife/2006_1/2006_0111.pdf"
       }
-    ]
+    ],
+    "conclusion": "중국어 白菜의 구어 소리를 받아들였다는 해설이다. 한국 한자음 백채를 단순히 빨리 발음해서 생겼다고 설명하는 것과 다르다.",
+    "sourceDependence": {
+      "level": "높음",
+      "reason": "등록 출처 1개에 근거한 설명. 원문 문장·전개 유사도는 미측정.",
+      "basis": "출처 수에 따른 예비 분류",
+      "reviewedAt": "2026-11-15"
+    }
   },
   {
     "id": "etymology-20261114-15-08",
@@ -205,7 +282,14 @@
         "title": "진갑곤, 「한자어와 관계있는 우리말의 어원」, 새국어생활 12권 2호, 2002, 165–166쪽 해당 대목 확인",
         "url": "https://www.korean.go.kr/nkview/nklife/2002_2/2002_0212.pdf"
       }
-    ]
+    ],
+    "conclusion": "숙랭(熟冷) 계열의 옛말과 연결된다는 해설이다. 冷의 존재는 확인되지만 그 글자를 선택한 최초 동기까지는 밝혀지지 않았다.",
+    "sourceDependence": {
+      "level": "높음",
+      "reason": "등록 출처 1개에 근거한 설명. 원문 문장·전개 유사도는 미측정.",
+      "basis": "출처 수에 따른 예비 분류",
+      "reviewedAt": "2026-11-15"
+    }
   },
   {
     "id": "etymology-20261114-15-09",
@@ -225,7 +309,14 @@
         "title": "소열녕, 「어원에 입각한 한자어 판별 기준」, 중국학보 107, 2024, 3–23쪽 — KCI 초록·서지정보만 확인",
         "url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003058139"
       }
-    ]
+    ],
+    "conclusion": "간난(艱難)의 형태와 뜻이 변한 것으로 설명된다. 넓은 고생의 의미에서 살림이 넉넉하지 못하다는 의미로 좁아진 것이다.",
+    "sourceDependence": {
+      "level": "검토 필요",
+      "reason": "복수 출처가 등록되어 있으나 독립성·핵심 논증 비중은 아직 미평가.",
+      "basis": "출처 수에 따른 예비 분류",
+      "reviewedAt": "2026-11-15"
+    }
   },
   {
     "id": "etymology-20261114-15-10",
@@ -245,7 +336,14 @@
         "title": "송창선, 「고유어로 인식되는 중국어계 귀화어 — 짐승, 나으리/나리, 설마를 대상으로」, 국어교육연구 90, 2026, 261–290쪽 — KCI 초록·서지정보만 확인",
         "url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003307298"
       }
-    ]
+    ],
+    "conclusion": "중생 유래설과 禽獸 차용을 제안한 대안이 함께 있다. 현재 확인한 자료만으로 하나를 최종 정답으로 고를 수 없다.",
+    "sourceDependence": {
+      "level": "검토 필요",
+      "reason": "복수 출처가 등록되어 있으나 독립성·핵심 논증 비중은 아직 미평가.",
+      "basis": "출처 수에 따른 예비 분류",
+      "reviewedAt": "2026-11-15"
+    }
   },
   {
     "id": "etymology-20261114-18-01",
@@ -261,7 +359,14 @@
         "title": "조항범, 「잘못 알고 있는 어원 몇 가지(2)」, 새국어생활 15권 2호, 2005, 2.6절·115–117쪽 — 해당 절 본문 확인",
         "url": "https://korean.go.kr/nkview/nklife/2005_2/2005_0207.pdf"
       }
-    ]
+    ],
+    "conclusion": "검토한 해설은 돌목→도르목→도루묵의 변화를 제시한다. 임금의 ‘도로 묵’ 명령은 민간어원으로 구별해야 하며 돌목의 내부 기원은 남은 문제다.",
+    "sourceDependence": {
+      "level": "높음",
+      "reason": "등록 출처 1개에 근거한 설명. 원문 문장·전개 유사도는 미측정.",
+      "basis": "출처 수에 따른 예비 분류",
+      "reviewedAt": "2026-11-15"
+    }
   },
   {
     "id": "etymology-20261114-18-02",
@@ -277,7 +382,14 @@
         "title": "유희경, 「행주치마」, 한국민족문화대백과사전, 1995 집필, 내용 절 — 사성통해·훈몽자회 용례는 이 해설을 통해 확인",
         "url": "https://encykorea.aks.ac.kr/Article/E0062862"
       }
-    ]
+    ],
+    "conclusion": "행주대첩 이전 문헌에 이름이 확인되므로 전투 때문에 처음 생긴 이름으로 볼 수 없다. 치마를 보호하려고 덧입는 작업용 옷의 이름이었다.",
+    "sourceDependence": {
+      "level": "높음",
+      "reason": "등록 출처 1개에 근거한 설명. 원문 문장·전개 유사도는 미측정.",
+      "basis": "출처 수에 따른 예비 분류",
+      "reviewedAt": "2026-11-15"
+    }
   },
   {
     "id": "etymology-20261114-18-03",
@@ -297,7 +409,14 @@
         "title": "우리말 배움터, 「시치미를 떼다」, 어원 게시판 — 본문 및 표시된 자료명 우리말 유래 사전 확인",
         "url": "https://urimal.nara-speller.co.kr/urimal_new/read/common/etymon/etymon.asp?ID=781&kind=7&page_num=7&search_str=&select="
       }
-    ]
+    ],
+    "conclusion": "매의 주인 표시를 떼면 소속을 감출 수 있다는 행동에서 모르는 척한다는 비유로 이어졌다는 설명이다.",
+    "sourceDependence": {
+      "level": "검토 필요",
+      "reason": "복수 출처가 등록되어 있으나 독립성·핵심 논증 비중은 아직 미평가.",
+      "basis": "출처 수에 따른 예비 분류",
+      "reviewedAt": "2026-11-15"
+    }
   },
   {
     "id": "etymology-20261114-18-04",
@@ -313,7 +432,14 @@
         "title": "조항범, 「아침·점심·저녁」, 새국어소식, 2001년 1월 — 점심 설명 본문 확인",
         "url": "https://www.korean.go.kr/nkview/nknews/200101/30_1.htm"
       }
-    ]
+    ],
+    "conclusion": "가볍게 먹는 음식이라는 點心의 뜻이 낮의 식사와 그 시간대로 넓어졌다는 설명이다.",
+    "sourceDependence": {
+      "level": "높음",
+      "reason": "등록 출처 1개에 근거한 설명. 원문 문장·전개 유사도는 미측정.",
+      "basis": "출처 수에 따른 예비 분류",
+      "reviewedAt": "2026-11-15"
+    }
   },
   {
     "id": "etymology-20261114-18-05",
@@ -329,7 +455,14 @@
         "title": "김무림, 「‘감자와 고구마’의 어원」, 새국어생활 19권 3호, 2009, 93–97쪽 — 해당 본문 확인",
         "url": "https://korean.go.kr/nkview/nklife/2009_3/2009_0306.pdf"
       }
-    ]
+    ],
+    "conclusion": "감저는 먼저 고구마를 가리켰고 두 작물을 함께 가리키기도 했다. 이름의 적용 범위가 갈라져 오늘의 표준어 감자가 된 것이다.",
+    "sourceDependence": {
+      "level": "높음",
+      "reason": "등록 출처 1개에 근거한 설명. 원문 문장·전개 유사도는 미측정.",
+      "basis": "출처 수에 따른 예비 분류",
+      "reviewedAt": "2026-11-15"
+    }
   },
   {
     "id": "etymology-20261114-18-06",
@@ -345,7 +478,14 @@
         "title": "김무림, 「‘감자와 고구마’의 어원」, 새국어생활 19권 3호, 2009, 95–97쪽 — 해사일기·물명고는 해설의 인용을 통해 확인",
         "url": "https://korean.go.kr/nkview/nklife/2009_3/2009_0306.pdf"
       }
-    ]
+    ],
+    "conclusion": "대마도 방언 koukouimo와 연결하는 해설이 있다. 옛 기록은 차용의 단서를 제공하지만 오늘의 마지막 음절까지의 경로는 이 자료에서 완전히 해명되지 않는다.",
+    "sourceDependence": {
+      "level": "높음",
+      "reason": "등록 출처 1개에 근거한 설명. 원문 문장·전개 유사도는 미측정.",
+      "basis": "출처 수에 따른 예비 분류",
+      "reviewedAt": "2026-11-15"
+    }
   },
   {
     "id": "etymology-20261114-18-07",
@@ -361,7 +501,14 @@
         "title": "조항범, 「네티즌들이 궁금해하는 어원 몇 가지(1)」, 새국어생활 14권 2호, 2004, 외상을 긋다 절·132–134쪽 — 해당 본문 확인",
         "url": "https://www.korean.go.kr/nkview/nklife/2004_2/2004_0206.pdf"
       }
-    ]
+    ],
+    "conclusion": "거래를 선이나 금으로 표시하던 관행으로 ‘긋다’를 설명할 수 있다. 외상 자체의 外上 표기가 한자어인지 차자 표기인지에는 이견이 있다.",
+    "sourceDependence": {
+      "level": "높음",
+      "reason": "등록 출처 1개에 근거한 설명. 원문 문장·전개 유사도는 미측정.",
+      "basis": "출처 수에 따른 예비 분류",
+      "reviewedAt": "2026-11-15"
+    }
   },
   {
     "id": "etymology-20261114-18-08",
@@ -381,7 +528,14 @@
         "title": "국립국어원 한국어기초사전, 「별안간」, 원어·뜻풀이 확인",
         "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=58953&lang=eng"
       }
-    ]
+    ],
+    "conclusion": "밤하늘의 별이 아니라 瞥眼間이다. 눈으로 언뜻 보는 짧은 사이가 갑작스러운 짧은 시간을 나타낸다.",
+    "sourceDependence": {
+      "level": "검토 필요",
+      "reason": "복수 출처가 등록되어 있으나 독립성·핵심 논증 비중은 아직 미평가.",
+      "basis": "출처 수에 따른 예비 분류",
+      "reviewedAt": "2026-11-15"
+    }
   },
   {
     "id": "etymology-20261114-18-09",
@@ -397,7 +551,14 @@
         "title": "이운영, 「다른 나라에서 들어온 말」, 새국어소식, 2004년 9월, 사전의 이해 — 빵·냄비 설명 본문 확인",
         "url": "https://www.korean.go.kr/nkview/nknews/200409/74_4.html"
       }
-    ]
+    ],
+    "conclusion": "검토한 자료는 먼 뿌리로 포르투갈어 pão를 제시한다. 포르투갈에서 한국으로 직접 들어왔다는 뜻은 아니며 중간 경로는 이 편에서 확인하지 못했다.",
+    "sourceDependence": {
+      "level": "높음",
+      "reason": "등록 출처 1개에 근거한 설명. 원문 문장·전개 유사도는 미측정.",
+      "basis": "출처 수에 따른 예비 분류",
+      "reviewedAt": "2026-11-15"
+    }
   },
   {
     "id": "etymology-20261114-18-10",
@@ -413,7 +574,14 @@
         "title": "이운영, 「다른 나라에서 들어온 말」, 새국어소식, 2004년 9월, 사전의 이해 — 냄비·나베 설명 본문 확인",
         "url": "https://www.korean.go.kr/nkview/nknews/200409/74_4.html"
       }
-    ]
+    ],
+    "conclusion": "일본어 nabe와 이어지는 차용어라는 해설이다. 메뉴의 나베와 관련되지만 세부 소리 변화의 각 단계는 이번 자료에 없다.",
+    "sourceDependence": {
+      "level": "높음",
+      "reason": "등록 출처 1개에 근거한 설명. 원문 문장·전개 유사도는 미측정.",
+      "basis": "출처 수에 따른 예비 분류",
+      "reviewedAt": "2026-11-15"
+    }
   },
   {
     "id": "etymology-20261114-21-01",
@@ -429,7 +597,14 @@
         "title": "국립국어원 온라인가나다, 「수박」, 2026-05-06 답변 — 표준국어대사전 어원 정보 인용 확인",
         "url": "https://www.korean.go.kr/front/onlineQna/onlineQnaView.do?mn_id=57&pageIndex=1&qna_seq=330814"
       }
-    ]
+    ],
+    "conclusion": "사전 분석은 슈[水]+박이다. 수는 물 수와 관련되지만 박까지 임의의 한자로 풀이할 근거는 없다.",
+    "sourceDependence": {
+      "level": "높음",
+      "reason": "등록 출처 1개에 근거한 설명. 원문 문장·전개 유사도는 미측정.",
+      "basis": "출처 수에 따른 예비 분류",
+      "reviewedAt": "2026-11-15"
+    }
   },
   {
     "id": "etymology-20261114-21-02",
@@ -449,7 +624,14 @@
         "title": "국립한글박물관, 「이게 불교 용어라고? 모르고 쓰던 일상 속 불교 단어 알아보기!」, 한박웃음 2026년 5월, 찰나 대목",
         "url": "https://www.hangeul.go.kr/webzine/202605/sub2_3.html"
       }
-    ]
+    ],
+    "conclusion": "산스크리트어 크샤나를 한자 소리로 옮긴 불교 용어다. 刹과 那의 뜻을 합친 말이 아니다.",
+    "sourceDependence": {
+      "level": "검토 필요",
+      "reason": "복수 출처가 등록되어 있으나 독립성·핵심 논증 비중은 아직 미평가.",
+      "basis": "출처 수에 따른 예비 분류",
+      "reviewedAt": "2026-11-15"
+    }
   },
   {
     "id": "etymology-20261114-21-03",
@@ -469,7 +651,14 @@
         "title": "조항범, 「‘벼랑’ 관련 어휘의 通時的 考察」, 지명학 26, 2017, 287–330쪽 — KCI 초록·서지정보만 확인",
         "url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002239265"
       }
-    ]
+    ],
+    "conclusion": "낭 자체가 절벽을 뜻했다. 뒤 요소의 결합 과정에는 어간 결합설과 낭떠러지기에서 기가 생략되었다는 설이 있어 구분해야 한다.",
+    "sourceDependence": {
+      "level": "검토 필요",
+      "reason": "복수 출처가 등록되어 있으나 독립성·핵심 논증 비중은 아직 미평가.",
+      "basis": "출처 수에 따른 예비 분류",
+      "reviewedAt": "2026-11-15"
+    }
   },
   {
     "id": "etymology-20261114-21-04",
@@ -485,7 +674,14 @@
         "title": "홍윤표, 「‘부랴부랴’의 어원」, 쉼표·마침표, 2007년 9월, 문헌 용례·결론 본문",
         "url": "https://www.korean.go.kr/nkview/onletter/20070901/print/04.html"
       }
-    ]
+    ],
+    "conclusion": "불을 알리는 ‘불이야불이야’가 다급한 행동을 나타내는 말로 굳었다는 문헌 해설이다.",
+    "sourceDependence": {
+      "level": "높음",
+      "reason": "등록 출처 1개에 근거한 설명. 원문 문장·전개 유사도는 미측정.",
+      "basis": "출처 수에 따른 예비 분류",
+      "reviewedAt": "2026-11-15"
+    }
   },
   {
     "id": "etymology-20261114-21-05",
@@ -501,7 +697,14 @@
         "title": "홍윤표, 「‘여보’의 어원」, 쉼표·마침표, 2007년 4월, 어형 분석·19세기 춘향전 용례",
         "url": "https://www.korean.go.kr/nkview/onletter/20070401/print/04.html"
       }
-    ]
+    ],
+    "conclusion": "如寶라는 한자 풀이는 근거가 없고 ‘여기 보오’와 연결하는 설명이 제시된다. 옛날에는 부부 외의 사람에게도 썼으며 세부 축약 경로는 미확정이다.",
+    "sourceDependence": {
+      "level": "높음",
+      "reason": "등록 출처 1개에 근거한 설명. 원문 문장·전개 유사도는 미측정.",
+      "basis": "출처 수에 따른 예비 분류",
+      "reviewedAt": "2026-11-15"
+    }
   },
   {
     "id": "etymology-20261114-21-06",
@@ -517,7 +720,14 @@
         "title": "홍윤표, 「부채의 어원」, 쉼표·마침표, 2007년 6월, 형태 분석·시대별 용례 본문",
         "url": "https://www.korean.go.kr/nkview/onletter/20070601/print/04.html"
       }
-    ]
+    ],
+    "conclusion": "붗다와 옛 형태 부체를 바탕으로 한 도구명 분석이 제시된다. 부+채에 오늘의 뜻을 각각 붙이는 것만으로는 옛 형태를 설명할 수 없다.",
+    "sourceDependence": {
+      "level": "높음",
+      "reason": "등록 출처 1개에 근거한 설명. 원문 문장·전개 유사도는 미측정.",
+      "basis": "출처 수에 따른 예비 분류",
+      "reviewedAt": "2026-11-15"
+    }
   },
   {
     "id": "etymology-20261114-21-07",
@@ -533,7 +743,14 @@
         "title": "윤진석, 「4. 역사서술은 객관적이고 공정할 수 있는가?」, 인문360, 2020-12-08, 술이부작 절·주5의 모순 해설 — 고전 원문은 미대조",
         "url": "https://inmun360.culture.go.kr/content/357.do?cid=2367432&mode=view&page=2"
       }
-    ]
+    ],
+    "conclusion": "矛는 창, 盾은 방패다. 무엇이든 뚫는 창과 무엇이든 막는 방패라는 양립 불가능한 주장에 관한 고사에서 온 표현이다.",
+    "sourceDependence": {
+      "level": "높음",
+      "reason": "등록 출처 1개에 근거한 설명. 원문 문장·전개 유사도는 미측정.",
+      "basis": "출처 수에 따른 예비 분류",
+      "reviewedAt": "2026-11-15"
+    }
   },
   {
     "id": "etymology-20261114-21-08",
@@ -549,7 +766,14 @@
         "title": "김한상, 「아수라장」, 한국민족문화대백과사전, 2016 집필·2023 수정, 정의·내용 본문",
         "url": "https://encykorea.aks.ac.kr/Article/E0079295"
       }
-    ]
+    ],
+    "conclusion": "싸움이 끊이지 않는 불교의 아수라도 이미지가 현실의 혼란을 비유하게 된 표현이다.",
+    "sourceDependence": {
+      "level": "높음",
+      "reason": "등록 출처 1개에 근거한 설명. 원문 문장·전개 유사도는 미측정.",
+      "basis": "출처 수에 따른 예비 분류",
+      "reviewedAt": "2026-11-15"
+    }
   },
   {
     "id": "etymology-20261114-21-09",
@@ -569,7 +793,14 @@
         "title": "고형규, 「차 마시고 밥 먹는 일…다반사는 흔한 일」, 연합뉴스, 2026-07-07, 본문",
         "url": "https://www.yna.co.kr/view/AKR20260706079400546"
       }
-    ]
+    ],
+    "conclusion": "多가 아니라 茶飯事다. 차 마시고 밥 먹는 일처럼 흔한 일이라는 비유다.",
+    "sourceDependence": {
+      "level": "검토 필요",
+      "reason": "복수 출처가 등록되어 있으나 독립성·핵심 논증 비중은 아직 미평가.",
+      "basis": "출처 수에 따른 예비 분류",
+      "reviewedAt": "2026-11-15"
+    }
   },
   {
     "id": "etymology-20261114-21-10",
@@ -589,7 +820,14 @@
         "title": "조기룡, 「이판승」, 한국민족문화대백과사전, 2022 집필·2024 수정, 내용의 이판사판 유래 대목",
         "url": "https://encykorea.aks.ac.kr/Article/E0046353"
       }
-    ]
+    ],
+    "conclusion": "理判과 事判이라는 불교의 두 역할에 연결된다. 다만 궁지를 뜻하게 된 이유는 전문가 설명이 갈리므로 하나의 일화로 확정하면 안 된다.",
+    "sourceDependence": {
+      "level": "검토 필요",
+      "reason": "복수 출처가 등록되어 있으나 독립성·핵심 논증 비중은 아직 미평가.",
+      "basis": "출처 수에 따른 예비 분류",
+      "reviewedAt": "2026-11-15"
+    }
   },
   {
     "id": "etymology-20261115-00-01",
@@ -605,7 +843,14 @@
         "title": "홍윤표, 「황소의 어원」, 쉼표·마침표, 2007년 7월, 옛 표기 및 변화 원인 해설 본문",
         "url": "https://www.korean.go.kr/nkview/onletter/20070701/print/04.html"
       }
-    ]
+    ],
+    "conclusion": "옛 한쇼의 한은 크다는 뜻이었다는 해설이다. 누런색의 黃이 형태 변화에 영향을 주었을 가능성과 원래 뜻은 구별해야 한다.",
+    "sourceDependence": {
+      "level": "높음",
+      "reason": "등록 출처 1개에 근거한 설명. 원문 문장·전개 유사도는 미측정.",
+      "basis": "출처 수에 따른 예비 분류",
+      "reviewedAt": "2026-11-15"
+    }
   },
   {
     "id": "etymology-20261115-00-02",
@@ -621,7 +866,14 @@
         "title": "홍윤표, 「‘설빔’의 어원」, 쉼표·마침표, 2007년 11월, 명사형 변화와 설빔·혼인빔 용례 본문",
         "url": "https://www.korean.go.kr/nkview/onletter/20071101/print/04.html"
       }
-    ]
+    ],
+    "conclusion": "빔은 꾸미는 행위와 연결된 말이다. 설빔은 새 옷만이 아니라 장신구를 포함한 설날의 치장을 가리킬 수 있었다.",
+    "sourceDependence": {
+      "level": "높음",
+      "reason": "등록 출처 1개에 근거한 설명. 원문 문장·전개 유사도는 미측정.",
+      "basis": "출처 수에 따른 예비 분류",
+      "reviewedAt": "2026-11-15"
+    }
   },
   {
     "id": "etymology-20261115-00-03",
@@ -637,7 +889,14 @@
         "title": "이기문, 「빈대떡과 변씨만두」, 새국어생활 17권 2호, 2007년 여름, 133–136쪽의 1·2절 원문 확인",
         "url": "https://www.korean.go.kr/nkview/nklife/2007_2/2007_0209.pdf"
       }
-    ]
+    ],
+    "conclusion": "중국어계 옛 이름 빙쟈와 연결하는 설명이다. 貧者·賓待 풀이는 민간어원으로 검토되며, 빈대로 바뀐 정확한 계기는 미해결이다.",
+    "sourceDependence": {
+      "level": "높음",
+      "reason": "등록 출처 1개에 근거한 설명. 원문 문장·전개 유사도는 미측정.",
+      "basis": "출처 수에 따른 예비 분류",
+      "reviewedAt": "2026-11-15"
+    }
   },
   {
     "id": "etymology-20261115-00-04",
@@ -657,7 +916,14 @@
         "title": "김선철, 「껌과 고무」, 한겨레 2008-06-10, 국어평생교육 우리말 배움터 수록 본문",
         "url": "https://urimal.nara-speller.co.kr/urimal_new/read/common/sisa/sisa.asp?ID=1350&page_num=475&search_str=&section=7&select="
       }
-    ]
+    ],
+    "conclusion": "일본어를 거친 차용이라는 해설이 있다. 먼 기원은 프랑스어설·네덜란드어설이 함께 소개되므로 직접 전래로 단정하지 않는다.",
+    "sourceDependence": {
+      "level": "검토 필요",
+      "reason": "복수 출처가 등록되어 있으나 독립성·핵심 논증 비중은 아직 미평가.",
+      "basis": "출처 수에 따른 예비 분류",
+      "reviewedAt": "2026-11-15"
+    }
   },
   {
     "id": "etymology-20261115-00-05",
@@ -677,7 +943,14 @@
         "title": "차경희, 「호도(胡桃)」, 조선왕조실록사전, ‘개설’·‘원산지 및 유통’ 절(게시연도 미표시)",
         "url": "https://dh.aks.ac.kr/sillokwiki/index.php/호도(胡桃)"
       }
-    ]
+    ],
+    "conclusion": "호도(胡桃)의 끝 모음이 달라져 굳어진 형태다. 지금의 표준어를 한자음에 맞춰 호도로 되돌릴 이유는 없다.",
+    "sourceDependence": {
+      "level": "검토 필요",
+      "reason": "복수 출처가 등록되어 있으나 독립성·핵심 논증 비중은 아직 미평가.",
+      "basis": "출처 수에 따른 예비 분류",
+      "reviewedAt": "2026-11-15"
+    }
   },
   {
     "id": "etymology-20261115-00-06",
@@ -693,7 +966,14 @@
         "title": "차미희, 「등용문(登龍門)」, 조선왕조실록사전, ‘개설’·‘내용 및 특징’ 절, 세종 18년 4월 7일 기사 인용(게시연도 미표시)",
         "url": "https://waks.aks.ac.kr/rsh/dir/rview.aspx?dataID=AKS-2013-CKD-1240001_DIC%4000016322&rshID=AKS-2007-AEZ-3101"
       }
-    ]
+    ],
+    "conclusion": "登龍門의 龍은 용이다. 용문을 오른 물고기가 용이 된다는 전설이 인정과 출세의 관문이라는 비유로 이어졌다.",
+    "sourceDependence": {
+      "level": "높음",
+      "reason": "등록 출처 1개에 근거한 설명. 원문 문장·전개 유사도는 미측정.",
+      "basis": "출처 수에 따른 예비 분류",
+      "reviewedAt": "2026-11-15"
+    }
   },
   {
     "id": "etymology-20261115-00-07",
@@ -713,7 +993,14 @@
         "title": "한상조, 「走馬燈(주마등)」, 동아일보 ‘신문과 놀자!’, 2023-12-15, ‘유래’의 장치·비유 설명",
         "url": "https://www.donga.com/news/Society/article/all/20231214/122633298/1"
       }
-    ]
+    ],
+    "conclusion": "실제로 회전하며 움직이는 그림자를 보여 주는 등이 있었다. 빠르게 지나가는 그 영상이 기억과 세월의 비유가 된 것이다.",
+    "sourceDependence": {
+      "level": "검토 필요",
+      "reason": "복수 출처가 등록되어 있으나 독립성·핵심 논증 비중은 아직 미평가.",
+      "basis": "출처 수에 따른 예비 분류",
+      "reviewedAt": "2026-11-15"
+    }
   },
   {
     "id": "etymology-20261115-00-08",
@@ -733,7 +1020,14 @@
         "title": "국립국어원 한국어기초사전, 「미봉책」, 뜻풀이·원어 정보",
         "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=56353"
       }
-    ]
+    ],
+    "conclusion": "未가 아니라 彌縫策으로, 빈틈을 메운다는 뜻과 관련된다. 오늘의 임시방편이라는 부정적 의미를 고사 속 전술에 그대로 적용하면 안 된다.",
+    "sourceDependence": {
+      "level": "검토 필요",
+      "reason": "복수 출처가 등록되어 있으나 독립성·핵심 논증 비중은 아직 미평가.",
+      "basis": "출처 수에 따른 예비 분류",
+      "reviewedAt": "2026-11-15"
+    }
   },
   {
     "id": "etymology-20261115-00-09",
@@ -753,7 +1047,14 @@
         "title": "박권우, 「시금치」, 한국민족문화대백과사전, 1995 집필·2026 수정, ‘개설’의 한자 명칭 대목",
         "url": "https://encykorea.aks.ac.kr/Article/E0032320"
       }
-    ]
+    ],
+    "conclusion": "확인한 논문 초록은 중국어 赤根菜 차용설을 제시한다. 시큼한 맛에서 왔다는 연상은 근거가 아니며 세부 음운 과정은 초록만으로 설명할 수 없다.",
+    "sourceDependence": {
+      "level": "검토 필요",
+      "reason": "복수 출처가 등록되어 있으나 독립성·핵심 논증 비중은 아직 미평가.",
+      "basis": "출처 수에 따른 예비 분류",
+      "reviewedAt": "2026-11-15"
+    }
   },
   {
     "id": "etymology-20261115-00-10",
@@ -769,7 +1070,14 @@
         "title": "KBS WORLD, 「퇴고 / 추고」, 한국어배우기, 2011-03-18, 자구 수정의 뜻과 가도·한유 고사 본문",
         "url": "https://world.kbs.co.kr/service/contents_view.htm?board_code=net_lang&board_seq=229413&id=&lang=k&menu_cate=learnkorean&page=216"
       }
-    ]
+    ],
+    "conclusion": "推와 敲는 밀다와 두드리다다. 가도가 시의 동사를 고민했다는 고사가 문장을 거듭 다듬는 일을 가리키게 되었다.",
+    "sourceDependence": {
+      "level": "높음",
+      "reason": "등록 출처 1개에 근거한 설명. 원문 문장·전개 유사도는 미측정.",
+      "basis": "출처 수에 따른 예비 분류",
+      "reviewedAt": "2026-11-15"
+    }
   },
   {
     "id": "etymology-20261115-03-01",
@@ -785,7 +1093,14 @@
         "title": "홍윤표, 「‘나이’의 어원」, 쉼표·마침표, 2007년 1월, 나히·조사 결합·영파생 해설 본문",
         "url": "https://www.korean.go.kr/nkview/onletter/20070101/04.html"
       }
-    ]
+    ],
+    "conclusion": "옛 명사 낳에 조사 이가 붙은 나히를 하나의 명사로 재분석하고 ㅎ이 사라졌다는 설명이다.",
+    "sourceDependence": {
+      "level": "높음",
+      "reason": "등록 출처 1개에 근거한 설명. 원문 문장·전개 유사도는 미측정.",
+      "basis": "출처 수에 따른 예비 분류",
+      "reviewedAt": "2026-11-15"
+    }
   },
   {
     "id": "etymology-20261115-03-02",
@@ -801,7 +1116,14 @@
         "title": "홍윤표, 「‘샌님’과 ‘스님’」, 새국어소식, 2002년 3월, 샌님의 축약·의미 분화 본문",
         "url": "https://www.korean.go.kr/nkview/nknews/200203/44_1.html"
       }
-    ]
+    ],
+    "conclusion": "생원님 전체가 줄어든 말이라는 설명이다. 존칭에서 인물의 태도를 평가하거나 놀리는 말로 의미가 갈라졌다.",
+    "sourceDependence": {
+      "level": "높음",
+      "reason": "등록 출처 1개에 근거한 설명. 원문 문장·전개 유사도는 미측정.",
+      "basis": "출처 수에 따른 예비 분류",
+      "reviewedAt": "2026-11-15"
+    }
   },
   {
     "id": "etymology-20261115-03-03",
@@ -817,7 +1139,14 @@
         "title": "이준석, 「모순(矛盾)과 완벽(完璧)」, 새국어소식, 2002년 2월, 완벽·인상여 고사 본문",
         "url": "https://www.korean.go.kr/nkview/nknews/200202/43_1.html"
       }
-    ]
+    ],
+    "conclusion": "담장 壁이 아니라 옥 璧이다. 옥을 온전히 돌려보낸 고사의 의미가 완전한 상태를 가리키도록 넓어졌다.",
+    "sourceDependence": {
+      "level": "높음",
+      "reason": "등록 출처 1개에 근거한 설명. 원문 문장·전개 유사도는 미측정.",
+      "basis": "출처 수에 따른 예비 분류",
+      "reviewedAt": "2026-11-15"
+    }
   },
   {
     "id": "etymology-20261115-03-04",
@@ -833,7 +1162,14 @@
         "title": "조항범, 「네티즌들이 궁금해하는 어원 몇 가지(1)」, 새국어생활 14권 2호, 2004년 여름, Ⅱ-2 ‘개차반’ 130–132쪽 원문 확인",
         "url": "https://www.korean.go.kr/nkview/nklife/2004_2/2004_0206.pdf"
       }
-    ]
+    ],
+    "conclusion": "차반은 음식이다. 개가 먹는 음식인 똥에서 사람의 언행을 낮잡는 말로 이어졌다는 연구자의 설명이다.",
+    "sourceDependence": {
+      "level": "높음",
+      "reason": "등록 출처 1개에 근거한 설명. 원문 문장·전개 유사도는 미측정.",
+      "basis": "출처 수에 따른 예비 분류",
+      "reviewedAt": "2026-11-15"
+    }
   },
   {
     "id": "etymology-20261115-03-05",
@@ -849,7 +1185,14 @@
         "title": "이준석, 「오비이락(烏飛梨落)」, 새국어소식, 2002년 1월, 한역 속담과 관련 문헌 해설 본문",
         "url": "https://www.korean.go.kr/nkview/nknews/200201/42_1.html"
       }
-    ]
+    ],
+    "conclusion": "우리 속담 ‘까마귀 날자 배 떨어진다’를 한문으로 옮긴 표현으로 분류된다. 네 글자 한자라고 반드시 중국 고사인 것은 아니다.",
+    "sourceDependence": {
+      "level": "높음",
+      "reason": "등록 출처 1개에 근거한 설명. 원문 문장·전개 유사도는 미측정.",
+      "basis": "출처 수에 따른 예비 분류",
+      "reviewedAt": "2026-11-15"
+    }
   },
   {
     "id": "etymology-20261115-03-06",
@@ -865,7 +1208,14 @@
         "title": "국립국어원 한국어기초사전, 「용수철」, 뜻풀이·유의어·원어 정보",
         "url": "https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=69249"
       }
-    ]
+    ],
+    "conclusion": "龍鬚鐵로, 용·수염·쇠라는 구성이다. 용의 수염 같은 쇠라는 이미지는 읽히지만 최초 명명 장면까지 확인된 것은 아니다.",
+    "sourceDependence": {
+      "level": "높음",
+      "reason": "등록 출처 1개에 근거한 설명. 원문 문장·전개 유사도는 미측정.",
+      "basis": "출처 수에 따른 예비 분류",
+      "reviewedAt": "2026-11-15"
+    }
   },
   {
     "id": "etymology-20261115-03-07",
@@ -881,7 +1231,14 @@
         "title": "국사편찬위원회, 『연산군일기』 22권, 연산 3년(1497) 3월 16일 2번째 기사, 국역·원문 및 주석 176",
         "url": "https://sillok.history.go.kr/id/wja_10303016_002"
       }
-    ]
+    ],
+    "conclusion": "높은 곳에서 시장을 살펴 이익을 독점한 사람의 고사와 연결된다. 그 높은 자리의 이미지가 독점의 비유로 쓰였다.",
+    "sourceDependence": {
+      "level": "높음",
+      "reason": "등록 출처 1개에 근거한 설명. 원문 문장·전개 유사도는 미측정.",
+      "basis": "출처 수에 따른 예비 분류",
+      "reviewedAt": "2026-11-15"
+    }
   },
   {
     "id": "etymology-20261115-03-08",
@@ -897,7 +1254,14 @@
         "title": "홍윤표, 「‘경을 치다’의 어원」, 새국어소식, 2004년 12월, 형벌 명칭·치다 분석·문학 용례 본문",
         "url": "https://www.korean.go.kr/nkview/nknews/200412/77_1.html"
       }
-    ]
+    ],
+    "conclusion": "경은 黥이라는 옛 형벌이다. 죄를 몸에 새기는 벌에서 심한 벌이나 꾸지람이라는 의미가 남았다는 설명이다.",
+    "sourceDependence": {
+      "level": "높음",
+      "reason": "등록 출처 1개에 근거한 설명. 원문 문장·전개 유사도는 미측정.",
+      "basis": "출처 수에 따른 예비 분류",
+      "reviewedAt": "2026-11-15"
+    }
   },
   {
     "id": "etymology-20261115-03-09",
@@ -913,7 +1277,14 @@
         "title": "국사편찬위원회 우리역사넷, 「담배」, 영상 문화·예술 이야기, 해설 1절 ‘담배의 전래와 명칭’",
         "url": "https://contents.history.go.kr/front/tt/view.do?levelId=tt_b28"
       }
-    ]
+    ],
+    "conclusion": "담파고 계열의 여러 한자는 외국 이름의 소리를 옮긴 표기다. 오늘의 담배까지의 전체 음운 경로는 이번 자료만으로 확정하지 못한다.",
+    "sourceDependence": {
+      "level": "높음",
+      "reason": "등록 출처 1개에 근거한 설명. 원문 문장·전개 유사도는 미측정.",
+      "basis": "출처 수에 따른 예비 분류",
+      "reviewedAt": "2026-11-15"
+    }
   },
   {
     "id": "etymology-20261115-03-10",
@@ -933,7 +1304,14 @@
         "title": "김미자, 「쌈지」, 한국민족문화대백과사전, 1995 집필·2026 수정, ‘내용’의 부시쌈지 대목",
         "url": "https://encykorea.aks.ac.kr/Article/E0034066"
       }
-    ]
+    ],
+    "conclusion": "부시는 불+쇠에서 온 이름이라는 해설이다. 쇠 도구인 부시로 치는 돌이 부싯돌이다.",
+    "sourceDependence": {
+      "level": "검토 필요",
+      "reason": "복수 출처가 등록되어 있으나 독립성·핵심 논증 비중은 아직 미평가.",
+      "basis": "출처 수에 따른 예비 분류",
+      "reviewedAt": "2026-11-15"
+    }
   },
   {
     "id": "etymology-20261115-06-01",
@@ -949,7 +1327,14 @@
         "title": "홍윤표, 「‘주머니’의 어원」, 새국어소식, 2004년 8월, 문헌 인용·형태 분석 본문",
         "url": "https://www.korean.go.kr/nkview/nknews/200408/73_1.html"
       }
-    ]
+    ],
+    "conclusion": "옛 형태와 줌치의 비교에서 줌과의 연결을 탐색한 해설이 있다. 만주어와 닮았다는 사실만으로 차용어라고 결론 낼 수 없다.",
+    "sourceDependence": {
+      "level": "높음",
+      "reason": "등록 출처 1개에 근거한 설명. 원문 문장·전개 유사도는 미측정.",
+      "basis": "출처 수에 따른 예비 분류",
+      "reviewedAt": "2026-11-15"
+    }
   },
   {
     "id": "etymology-20261115-06-02",
@@ -965,7 +1350,14 @@
         "title": "조항범, 「‘건달’과 ‘한량’」, 새국어소식, 1999년 7월, 본문",
         "url": "https://www.korean.go.kr/nkview/nknews/199907/12_2.htm"
       }
-    ]
+    ],
+    "conclusion": "건달바라는 불교 음악 신의 이름과 연결된다. 오늘의 부정적 의미까지의 중간 변화는 해설의 추정과 구별해 읽어야 한다.",
+    "sourceDependence": {
+      "level": "높음",
+      "reason": "등록 출처 1개에 근거한 설명. 원문 문장·전개 유사도는 미측정.",
+      "basis": "출처 수에 따른 예비 분류",
+      "reviewedAt": "2026-11-15"
+    }
   },
   {
     "id": "etymology-20261115-06-03",
@@ -981,7 +1373,14 @@
         "title": "조항범, 「‘건달’과 ‘한량’」, 새국어소식, 1999년 7월, 본문",
         "url": "https://www.korean.go.kr/nkview/nknews/199907/12_2.htm"
       }
-    ]
+    ],
+    "conclusion": "閑良이라는 옛 무반 관련 명칭이 직무 없이 지내는 양반, 잘 놀고 돈 쓰는 사람의 의미로 넓어졌다는 설명이다.",
+    "sourceDependence": {
+      "level": "높음",
+      "reason": "등록 출처 1개에 근거한 설명. 원문 문장·전개 유사도는 미측정.",
+      "basis": "출처 수에 따른 예비 분류",
+      "reviewedAt": "2026-11-15"
+    }
   },
   {
     "id": "etymology-20261115-06-04",
@@ -997,7 +1396,14 @@
         "title": "조항범, 「잘못 알고 있는 어원 몇 가지(5)」, 새국어생활 16(1), 2006, 원문 135–142쪽",
         "url": "https://www.korean.go.kr/nkview/nklife/2006_1/2006_0108.pdf"
       }
-    ]
+    ],
+    "conclusion": "삼수와 갑산이라는 두 지명이다. 험하고 먼 유배지의 이미지가 어려운 처지를 감수하겠다는 각오의 표현이 되었다.",
+    "sourceDependence": {
+      "level": "높음",
+      "reason": "등록 출처 1개에 근거한 설명. 원문 문장·전개 유사도는 미측정.",
+      "basis": "출처 수에 따른 예비 분류",
+      "reviewedAt": "2026-11-15"
+    }
   },
   {
     "id": "etymology-20261115-06-05",
@@ -1013,7 +1419,14 @@
         "title": "조항범, 「잘못 알고 있는 어원 몇 가지(5)」, 새국어생활 16(1), 2006, 원문 135–142쪽",
         "url": "https://www.korean.go.kr/nkview/nklife/2006_1/2006_0108.pdf"
       }
-    ]
+    ],
+    "conclusion": "소를 걸고 내기했다는 이야기는 15세기의 쇠나기를 설명하지 못한다. 옛 형태에서의 변화는 확인되지만 내부 기원은 별도의 연구 문제다.",
+    "sourceDependence": {
+      "level": "높음",
+      "reason": "등록 출처 1개에 근거한 설명. 원문 문장·전개 유사도는 미측정.",
+      "basis": "출처 수에 따른 예비 분류",
+      "reviewedAt": "2026-11-15"
+    }
   },
   {
     "id": "etymology-20261115-06-06",
@@ -1029,7 +1442,14 @@
         "title": "진갑곤, 「한자어와 관계있는 우리말의 어원」, 새국어생활 12(2), 2002, 가게 164–165쪽·낭패 168쪽",
         "url": "https://www.korean.go.kr/nkview/nklife/2002_2/2002_0212.pdf"
       }
-    ]
+    ],
+    "conclusion": "임시로 지은 집이라는 假家와 연결하는 해설이다. 공간의 이름이 판매 장소의 이름으로 바뀌었다는 설명이며 최초 사용자는 미확인이다.",
+    "sourceDependence": {
+      "level": "높음",
+      "reason": "등록 출처 1개에 근거한 설명. 원문 문장·전개 유사도는 미측정.",
+      "basis": "출처 수에 따른 예비 분류",
+      "reviewedAt": "2026-11-15"
+    }
   },
   {
     "id": "etymology-20261115-06-07",
@@ -1049,7 +1469,14 @@
         "title": "국립국어원 한국어기초사전, 「낭패」, 뜻풀이·원어란",
         "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaNationCode=6&ParaWordNo=41273&captchaNumber=&commentTitle=&comment_user_name=&divSearch=defViewGlobal&nation=eng&nationCode=6&viewTypes=on&wordComment="
       }
-    ]
+    ],
+    "conclusion": "狼狽와 연결된 동물 이야기는 전승상의 설명이다. 실제 두 동물이 존재했다는 증거가 아니라 곤경을 설명해 온 고사로 읽어야 한다.",
+    "sourceDependence": {
+      "level": "검토 필요",
+      "reason": "복수 출처가 등록되어 있으나 독립성·핵심 논증 비중은 아직 미평가.",
+      "basis": "출처 수에 따른 예비 분류",
+      "reviewedAt": "2026-11-15"
+    }
   },
   {
     "id": "etymology-20261115-06-08",
@@ -1065,7 +1492,14 @@
         "title": "홍혁기, 「사면초가」, 법제처 지식창고, 등록 2009-01-01, 고전명구 본문",
         "url": "https://www.moleg.go.kr/mpbleg/mpblegInfo.mo?mid=a10402020000&mpb_leg_pst_seq=126109"
       }
-    ]
+    ],
+    "conclusion": "초가는 초나라 노래다. 포위된 항우에게 사방에서 들린 고향 노래가 고립의 신호가 되었다는 고사다.",
+    "sourceDependence": {
+      "level": "높음",
+      "reason": "등록 출처 1개에 근거한 설명. 원문 문장·전개 유사도는 미측정.",
+      "basis": "출처 수에 따른 예비 분류",
+      "reviewedAt": "2026-11-15"
+    }
   },
   {
     "id": "etymology-20261115-06-09",
@@ -1089,7 +1523,14 @@
         "title": "이성우, 「커피」, 한국민족문화대백과사전, 1995 집필·2025 수정, 내용 중 국내 수용 대목",
         "url": "https://encykorea.aks.ac.kr/Article/E0058616"
       }
-    ]
+    ],
+    "conclusion": "영어 coffee와 관련된 관용 표기다. 현재 영어 발음을 기계적으로 옮긴 결과라고 설명할 수 없으며 세부 전래 경로는 미확정이다.",
+    "sourceDependence": {
+      "level": "검토 필요",
+      "reason": "복수 출처가 등록되어 있으나 독립성·핵심 논증 비중은 아직 미평가.",
+      "basis": "출처 수에 따른 예비 분류",
+      "reviewedAt": "2026-11-15"
+    }
   },
   {
     "id": "etymology-20261115-06-10",
@@ -1105,7 +1546,14 @@
         "title": "조항범, 「잘못 알고 있는 어원 몇 가지(5)」, 새국어생활 16(1), 2006, 원문 135–142쪽",
         "url": "https://www.korean.go.kr/nkview/nklife/2006_1/2006_0108.pdf"
       }
-    ]
+    ],
+    "conclusion": "겻기를 겨루기와 연결하는 분석이 있다. 놀이의 경쟁적 성격은 설명되지만 슈지·슈슈의 기원과 변화 전체는 미해결이다.",
+    "sourceDependence": {
+      "level": "높음",
+      "reason": "등록 출처 1개에 근거한 설명. 원문 문장·전개 유사도는 미측정.",
+      "basis": "출처 수에 따른 예비 분류",
+      "reviewedAt": "2026-11-15"
+    }
   },
   {
     "id": "etymology-20261115-09-01",
@@ -1121,7 +1569,14 @@
         "title": "홍윤표, 「총각의 어원」, 새국어소식, 2004년 2월, 총각하다·사전 의미 비교 본문",
         "url": "https://www.korean.go.kr/nkview/nknews/200402/67_1.html"
       }
-    ]
+    ],
+    "conclusion": "總角은 머리를 모아 뿔처럼 묶는 모습과 관련된다. 머리 모양에서 성장 의례와 미혼 남자의 호칭으로 적용 대상이 바뀌었다.",
+    "sourceDependence": {
+      "level": "높음",
+      "reason": "등록 출처 1개에 근거한 설명. 원문 문장·전개 유사도는 미측정.",
+      "basis": "출처 수에 따른 예비 분류",
+      "reviewedAt": "2026-11-15"
+    }
   },
   {
     "id": "etymology-20261115-09-02",
@@ -1137,7 +1592,14 @@
         "title": "국립국어원 옛 소식지, 「어원 이야기」 중 동냥 항목, 본문 확인·개별 필자와 발행연도 미확인",
         "url": "https://www.korean.go.kr/nkview/news/92/news7_11.htm"
       }
-    ]
+    ],
+    "conclusion": "動鈴, 방울을 흔들며 시주를 구하는 행위와 연결하는 설명이다. 오늘의 구걸 의미까지의 사회적 원인은 해설의 해석이다.",
+    "sourceDependence": {
+      "level": "높음",
+      "reason": "등록 출처 1개에 근거한 설명. 원문 문장·전개 유사도는 미측정.",
+      "basis": "출처 수에 따른 예비 분류",
+      "reviewedAt": "2026-11-15"
+    }
   },
   {
     "id": "etymology-20261115-09-03",
@@ -1153,7 +1615,14 @@
         "title": "국립국어원 옛 소식지, 「어원 이야기」 중 어린이 항목, 본문 확인·개별 필자와 발행연도 미확인",
         "url": "https://www.korean.go.kr/nkview/news/12/1211.htm"
       }
-    ]
+    ],
+    "conclusion": "방정환 이전에도 형태가 있었다. 그의 역할은 최초 조어와 구별되는 존중의 의미 부여와 확산으로 설명해야 한다.",
+    "sourceDependence": {
+      "level": "높음",
+      "reason": "등록 출처 1개에 근거한 설명. 원문 문장·전개 유사도는 미측정.",
+      "basis": "출처 수에 따른 예비 분류",
+      "reviewedAt": "2026-11-15"
+    }
   },
   {
     "id": "etymology-20261115-09-04",
@@ -1173,7 +1642,14 @@
         "title": "김미자, 「장갑」, 한국민족문화대백과사전, 1995 집필·2026 수정, 내용 절",
         "url": "https://encykorea.aks.ac.kr/Article/E0048241"
       }
-    ]
+    ],
+    "conclusion": "사전은 掌匣과 掌甲을 모두 제시한다. 상자와 갑옷이라는 두 표기가 있으므로 하나만 옳다고 할 수 없으며 표기의 선후는 미확정이다.",
+    "sourceDependence": {
+      "level": "검토 필요",
+      "reason": "복수 출처가 등록되어 있으나 독립성·핵심 논증 비중은 아직 미평가.",
+      "basis": "출처 수에 따른 예비 분류",
+      "reviewedAt": "2026-11-15"
+    }
   },
   {
     "id": "etymology-20261115-09-05",
@@ -1193,7 +1669,14 @@
         "title": "조항범, 「잘못 알고 있는 어원 몇 가지(4)」, 새국어생활 15(4), 2005, 2.5 해장국 절",
         "url": "https://www.korean.go.kr/nkview/nklife/2005_4/2005_0406.pdf"
       }
-    ]
+    ],
+    "conclusion": "해장은 解酲의 속음 표기다. 창자 腸을 붙인 풀이는 이름의 근거가 아니다.",
+    "sourceDependence": {
+      "level": "검토 필요",
+      "reason": "복수 출처가 등록되어 있으나 독립성·핵심 논증 비중은 아직 미평가.",
+      "basis": "출처 수에 따른 예비 분류",
+      "reviewedAt": "2026-11-15"
+    }
   },
   {
     "id": "etymology-20261115-09-06",
@@ -1209,7 +1692,14 @@
         "title": "남성우, 「國語의 語彙 變化」, 국어생활 22, 1990년 가을, Ⅳ 의미 변화의 결과·평가의 변화",
         "url": "https://www.korean.go.kr/nkview/nklife/1990_3/22_2.html"
       }
-    ]
+    ],
+    "conclusion": "옛 마노라는 귀인을 높이는 말이었다. 아내를 가리키는 현재 용법은 의미와 평가가 달라진 결과다.",
+    "sourceDependence": {
+      "level": "높음",
+      "reason": "등록 출처 1개에 근거한 설명. 원문 문장·전개 유사도는 미측정.",
+      "basis": "출처 수에 따른 예비 분류",
+      "reviewedAt": "2026-11-15"
+    }
   },
   {
     "id": "etymology-20261115-09-07",
@@ -1225,7 +1715,14 @@
         "title": "국립국어원 온라인가나다, 2025-11-07 답변에 수록된 한글 맞춤법 제27항 해설, 부리나케 대목",
         "url": "https://korean.go.kr/front/onlineQna/onlineQnaView.do?mn_id=98&pageIndex=1&qna_seq=323329"
       }
-    ]
+    ],
+    "conclusion": "‘불이 나게’와 연결되지만 지금은 급히 움직임을 뜻하는 부사로 굳어 부리나케라고 쓴다.",
+    "sourceDependence": {
+      "level": "높음",
+      "reason": "등록 출처 1개에 근거한 설명. 원문 문장·전개 유사도는 미측정.",
+      "basis": "출처 수에 따른 예비 분류",
+      "reviewedAt": "2026-11-15"
+    }
   },
   {
     "id": "etymology-20261115-09-08",
@@ -1245,7 +1742,14 @@
         "title": "김혜경, 「한국 근대 여성의 가방문화에 대한 연구」, 성균관대학교 석사논문, 2015.8, 국회도서관 서지·공개 초록만 확인",
         "url": "https://dl.nanet.go.kr/detail/KDMT1201562984"
       }
-    ]
+    ],
+    "conclusion": "일본어 かばん을 거쳐 왔다는 설명과 그보다 먼 네덜란드어 연결설을 구별해야 한다. 먼 기원은 확인한 논문 초록에서도 가설이다.",
+    "sourceDependence": {
+      "level": "검토 필요",
+      "reason": "복수 출처가 등록되어 있으나 독립성·핵심 논증 비중은 아직 미평가.",
+      "basis": "출처 수에 따른 예비 분류",
+      "reviewedAt": "2026-11-15"
+    }
   },
   {
     "id": "etymology-20261115-09-09",
@@ -1261,7 +1765,14 @@
         "title": "조항범, 「잘못 알고 있는 어원 몇 가지(4)」, 새국어생활 15(4), 2005, 2.1 대박 절 85–87쪽",
         "url": "https://www.korean.go.kr/nkview/nklife/2005_4/2005_0406.pdf"
       }
-    ]
+    ],
+    "conclusion": "큰 배·노름의 몫·흥부의 박이라는 설이 있으나 검토한 연구는 확정을 유보한다. 재미있는 이야기 하나를 정답으로 골라서는 안 된다.",
+    "sourceDependence": {
+      "level": "높음",
+      "reason": "등록 출처 1개에 근거한 설명. 원문 문장·전개 유사도는 미측정.",
+      "basis": "출처 수에 따른 예비 분류",
+      "reviewedAt": "2026-11-15"
+    }
   },
   {
     "id": "etymology-20261115-09-10",
@@ -1277,7 +1788,14 @@
         "title": "조항범, 「잘못 알고 있는 어원 몇 가지(4)」, 새국어생활 15(4), 2005, 2.3 어음 절 88–90쪽",
         "url": "https://www.korean.go.kr/nkview/nklife/2005_4/2005_0406.pdf"
       }
-    ]
+    ],
+    "conclusion": "於音 표기만으로 한자어라고 할 수 없다. 옛 어험과 나눈 증표를 바탕으로 한 고유어 파생설이 제시되지만 분석은 가설이다.",
+    "sourceDependence": {
+      "level": "높음",
+      "reason": "등록 출처 1개에 근거한 설명. 원문 문장·전개 유사도는 미측정.",
+      "basis": "출처 수에 따른 예비 분류",
+      "reviewedAt": "2026-11-15"
+    }
   },
   {
     "id": "etymology-20261115-12-01",
@@ -1293,7 +1811,14 @@
         "title": "홍윤표, 「양치질」, 새국어소식 2002년 7월, 본문",
         "url": "https://www.korean.go.kr/nkview/nknews/200207/48_1.html"
       }
-    ]
+    ],
+    "conclusion": "버드나무 가지 楊枝와 양지질에서 양치질로 이어졌다는 설명이다. 齒에 맞춘 이해는 변화의 과정으로 구별된다.",
+    "sourceDependence": {
+      "level": "높음",
+      "reason": "등록 출처 1개에 근거한 설명. 원문 문장·전개 유사도는 미측정.",
+      "basis": "출처 수에 따른 예비 분류",
+      "reviewedAt": "2026-11-15"
+    }
   },
   {
     "id": "etymology-20261115-12-02",
@@ -1309,7 +1834,14 @@
         "title": "홍윤표, 「푸줏간의 어원」, 새국어소식 2003년 4월, 본문",
         "url": "https://www.korean.go.kr/nkview/nknews/200304/57_1.html"
       }
-    ]
+    ],
+    "conclusion": "庖廚는 잡아 요리하는 공간을 가리켰고 이후 고기 판매점의 뜻으로 쓰였다. 처음부터 오늘의 정육점과 같은 뜻은 아니었다.",
+    "sourceDependence": {
+      "level": "높음",
+      "reason": "등록 출처 1개에 근거한 설명. 원문 문장·전개 유사도는 미측정.",
+      "basis": "출처 수에 따른 예비 분류",
+      "reviewedAt": "2026-11-15"
+    }
   },
   {
     "id": "etymology-20261115-12-03",
@@ -1325,7 +1857,14 @@
         "title": "홍윤표, 「구두쇠의 어원」, 새국어소식 2003년 9월, 본문",
         "url": "https://www.korean.go.kr/nkview/nknews/200309/62_1.html"
       }
-    ]
+    ],
+    "conclusion": "인색하다는 뜻의 굳다와 사람을 나타내는 쇠로 분석된다. 신발에 쇠를 박았다는 일화는 민간어원이다.",
+    "sourceDependence": {
+      "level": "높음",
+      "reason": "등록 출처 1개에 근거한 설명. 원문 문장·전개 유사도는 미측정.",
+      "basis": "출처 수에 따른 예비 분류",
+      "reviewedAt": "2026-11-15"
+    }
   },
   {
     "id": "etymology-20261115-12-04",
@@ -1341,7 +1880,14 @@
         "title": "홍윤표, 「점잖다의 어원」, 새국어소식 2003년 8월, 본문",
         "url": "https://www.korean.go.kr/nkview/nknews/200308/61_1.html"
       }
-    ]
+    ],
+    "conclusion": "졈디 아니하다와 연결된다는 분석이다. 나이의 부정에서 태도 평가로 굳었기에 어린 사람에게도 쓸 수 있다.",
+    "sourceDependence": {
+      "level": "높음",
+      "reason": "등록 출처 1개에 근거한 설명. 원문 문장·전개 유사도는 미측정.",
+      "basis": "출처 수에 따른 예비 분류",
+      "reviewedAt": "2026-11-15"
+    }
   },
   {
     "id": "etymology-20261115-12-05",
@@ -1357,7 +1903,14 @@
         "title": "조항범, 「‘을씨년스럽다’의 語源에 대하여」, 한국어학 64, 2014, 169–194쪽; 서지·공개 초록만 확인",
         "url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART001900673"
       }
-    ]
+    ],
+    "conclusion": "1897년 사전을 근거로 하는 연구는 1905년 탄생설을 받아들이지 않고 1785년 흉년과 연결한다. 이번 확인은 그 논문의 공개 초록 범위다.",
+    "sourceDependence": {
+      "level": "높음",
+      "reason": "등록 출처 1개에 근거한 설명. 원문 문장·전개 유사도는 미측정.",
+      "basis": "출처 수에 따른 예비 분류",
+      "reviewedAt": "2026-11-15"
+    }
   },
   {
     "id": "etymology-20261115-12-06",
@@ -1373,7 +1926,14 @@
         "title": "박교선 등, 「포도학 개론—역사학에서 경영학까지」, 농촌진흥청 RDA 인테러뱅, 1교시 역사학의 어원 대목; 발행연도 미확인",
         "url": "https://www.nongsaro.go.kr/portal/ps/psv/psvrc/rdaInterDtl.ps?cntntsNo=34288&menuId=PS00063"
       }
-    ]
+    ],
+    "conclusion": "이란어계 이름을 중국에서 음역했다는 설명과 다른 풀이가 병기되어 있다. 한자 뜻의 단순 조합으로 확정할 수 없으며 한국어 유입 시점도 미확정이다.",
+    "sourceDependence": {
+      "level": "높음",
+      "reason": "등록 출처 1개에 근거한 설명. 원문 문장·전개 유사도는 미측정.",
+      "basis": "출처 수에 따른 예비 분류",
+      "reviewedAt": "2026-11-15"
+    }
   },
   {
     "id": "etymology-20261115-12-07",
@@ -1389,7 +1949,14 @@
         "title": "정석원, 「문화가 흐르는 한자: 白眉」, 동아일보, 2001-12-06, 본문",
         "url": "https://www.donga.com/news//article/all/20011206/7766500/9"
       }
-    ]
+    ],
+    "conclusion": "마량의 흰 눈썹을 가리킨 白眉가 뛰어난 사람·작품을 칭찬하는 말이 되었다는 고사다.",
+    "sourceDependence": {
+      "level": "높음",
+      "reason": "등록 출처 1개에 근거한 설명. 원문 문장·전개 유사도는 미측정.",
+      "basis": "출처 수에 따른 예비 분류",
+      "reviewedAt": "2026-11-15"
+    }
   },
   {
     "id": "etymology-20261115-12-08",
@@ -1405,7 +1972,14 @@
         "title": "이영호, 「압권」, KBS WORLD 바른 우리말, 본문; 게시연도 미확인",
         "url": "https://rki.kbs.co.kr/service/contents_view.htm?board_seq=230672&id=&lang=k&menu_cate=learnkorean"
       }
-    ]
+    ],
+    "conclusion": "뛰어난 시험 답안을 다른 답안 위에 올렸다는 유래 해설이다. 지금은 작품과 인상적인 대목을 평가하는 말로 쓰인다.",
+    "sourceDependence": {
+      "level": "높음",
+      "reason": "등록 출처 1개에 근거한 설명. 원문 문장·전개 유사도는 미측정.",
+      "basis": "출처 수에 따른 예비 분류",
+      "reviewedAt": "2026-11-15"
+    }
   },
   {
     "id": "etymology-20261115-12-09",
@@ -1425,7 +1999,14 @@
         "title": "정명희, 「야단법석」, 우리역사넷 한국문화사, 불교 의례와 의식 문화 절",
         "url": "https://contents.history.go.kr/front/km/view.do?levelId=km_018_0070_0030_0010"
       }
-    ]
+    ],
+    "conclusion": "야외 법회 유래설은 있지만 언어 사전은 일상어와 불교 용어를 구별한다. 닮은 장면만으로 직접 계승을 확정할 수 없다는 것이 이번 비교의 결론이다.",
+    "sourceDependence": {
+      "level": "검토 필요",
+      "reason": "복수 출처가 등록되어 있으나 독립성·핵심 논증 비중은 아직 미평가.",
+      "basis": "출처 수에 따른 예비 분류",
+      "reviewedAt": "2026-11-15"
+    }
   },
   {
     "id": "etymology-20261115-12-10",
@@ -1449,6 +2030,13 @@
         "title": "한성백제박물관, 「금강저」, 도봉서원 출토 유물 설명",
         "url": "https://baekjemuseum.seoul.go.kr/m/module/index.jsp?boardid=a&mmode=content&mpid=SBM0301000000&pid=17563"
       }
-    ]
+    ],
+    "conclusion": "杵는 공이의 형태를 가리킨다. 확인한 논문 초록은 불교의 중국 전파 과정에서 금강과 공이가 결합한 명칭으로 설명한다.",
+    "sourceDependence": {
+      "level": "검토 필요",
+      "reason": "복수 출처가 등록되어 있으나 독립성·핵심 논증 비중은 아직 미평가.",
+      "basis": "출처 수에 따른 예비 분류",
+      "reviewedAt": "2026-11-15"
+    }
   }
 ]
