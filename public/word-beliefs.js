@@ -5,7 +5,7 @@ const paragraphs=t=>t.split('\n\n').map(p=>'<p class="story-body">'+esc(p)+'</p>
 export async function renderWordBeliefs(panel,sidebar,id) {
  const hash=location.hash;
  panel.innerHTML='<p class="loading">말과 믿음을 불러오는 중입니다.</p>';
- sidebar.innerHTML='<section class="side-card"><h2 class="side-title">말과 믿음</h2><p>말의 역사와 토착신앙이 만나는 자리에서, 우리가 무심코 쓰는 표현을 다시 읽습니다.</p><p>총 100편 · 3시간마다 10편씩 연재</p><p>확인된 어원, 학술적 가설, 민간어원, 오늘의 해석을 구분합니다. 소리가 비슷하다는 이유만으로 같은 뿌리라 단정하지 않습니다.</p></section>';
+ sidebar.innerHTML='<section class="side-card"><h2 class="side-title">말과 믿음</h2><p>말의 역사와 토착신앙이 만나는 자리에서, 우리가 무심코 쓰는 표현을 다시 읽습니다.</p><p>총 100편 · 연재 완료</p><p>확인된 어원, 학술적 가설, 민간어원, 오늘의 해석을 구분합니다. 소리가 비슷하다는 이유만으로 같은 뿌리라 단정하지 않습니다.</p></section>';
  try {
  if(!articles){pending ||= fetch('/word-beliefs.json',{cache:'no-cache'}).then(r=>{if(!r.ok)throw Error('자료를 불러오지 못했습니다.');return r.json();}).catch(e=>{pending=null;throw e;});articles=await pending;}
  if(location.hash!==hash)return;
